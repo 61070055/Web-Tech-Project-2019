@@ -3,19 +3,24 @@ var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
 const PI = Math.PI, HALF_PI = Math.PI / 2, PI_HALF = Math.PI / 2 + Math.PI, TWO_PI = Math.PI * 2;
 var mainCircle = new Circle(w / 2, h / 2, w / 12, '#FFF')
 var arcs = []
+var imgs = []
 //top left
-arcs.push(new Arc(w / 2 - 5, h / 2 - 5, w / 4.5, w / 4.5, PI, PI_HALF, '#FFFFFF'))
+arcs.push(new Arc(w / 2 - 5, h / 2 - 5, w / 4.5, w / 4.5, PI, PI_HALF, '#B5D3E7'))
 arcs.push(new Arc(w / 2 - 5, h / 2 - 5, w / 9, w / 9, PI, PI_HALF, '#417FAF'))
 //top right
-arcs.push(new Arc(w / 2 + 5, h / 2 - 5, w / 4.5, w / 4.5, PI_HALF, TWO_PI, '#FFFFFF'))
+arcs.push(new Arc(w / 2 + 5, h / 2 - 5, w / 4.5, w / 4.5, PI_HALF, TWO_PI, '#B5D3E7'))
 arcs.push(new Arc(w / 2 + 5, h / 2 - 5, w / 9, w / 9, PI_HALF, TWO_PI, '#417FAF'))
 //bottom right
-arcs.push(new Arc(w / 2 + 5, h / 2 + 5, w / 4.5, w / 4.5, TWO_PI, HALF_PI, '#FFFFFF'))
+arcs.push(new Arc(w / 2 + 5, h / 2 + 5, w / 4.5, w / 4.5, TWO_PI, HALF_PI, '#B5D3E7'))
 arcs.push(new Arc(w / 2 + 5, h / 2 + 5, w / 9, w / 9, TWO_PI, HALF_PI, '#417FAF'))
 //bottom left
-arcs.push(new Arc(w / 2 - 5, h / 2 + 5, w / 4.5, w / 4.5, HALF_PI, PI, '#FFFFFF'))
+arcs.push(new Arc(w / 2 - 5, h / 2 + 5, w / 4.5, w / 4.5, HALF_PI, PI, '#B5D3E7'))
 arcs.push(new Arc(w / 2 - 5, h / 2 + 5, w / 9, w / 9, HALF_PI, PI, '#417FAF'))
 
+
+function preload() {
+    imgs.push(new ImageComponemt(loadImage('./Material/Abstraction.png'), arcs[7].x-w/4.2, arcs[7].y-w/30, w/3.7, w/3.7))
+}
 function setup() {
     createCanvas(w, h);
     frameRate(30);
@@ -36,6 +41,9 @@ function draw() {
         arc.render()
     })
     mainCircle.render()
+    imgs.forEach(img => {
+        img.render()
+    })
 }
 
 function update() {
@@ -57,27 +65,27 @@ function mouseOver() {
     if(Math.pow(mouseX - mainCircle.x, 2) + Math.pow(mouseY - mainCircle.y, 2) < Math.pow(mainCircle.diameter, 2)){
         mainCircle.color = "#214d70"
     } else {
-        mainCircle.color = "#FFFFFF"
+        mainCircle.color = "#B5D3E7"
     }
     if(mouseX <= arcs[0].x && mouseY <= arcs[0].y && Math.pow(mouseX - arcs[0].x, 2) + Math.pow(mouseY - arcs[0].y, 2) < Math.pow(arcs[0].w, 2) && Math.pow(mouseX - arcs[1].x, 2) + Math.pow(mouseY - arcs[1].y, 2) > Math.pow(arcs[1].w, 2)){
         arcs[0].color = "#214d70"
     } else {
-        arcs[0].color = "#FFFFFF"
+        arcs[0].color = "#B5D3E7"
     }
     if(mouseX >= arcs[2].x && mouseY <= arcs[2].y && Math.pow(mouseX - arcs[2].x, 2) + Math.pow(mouseY - arcs[2].y, 2) < Math.pow(arcs[2].w, 2) && Math.pow(mouseX - arcs[3].x, 2) + Math.pow(mouseY - arcs[3].y, 2) > Math.pow(arcs[3].w, 2)){
         arcs[2].color = "#214d70"
     } else {
-        arcs[2].color = "#FFFFFF"
+        arcs[2].color = "#B5D3E7"
     }
     if(mouseX >= arcs[4].x && mouseY >= arcs[4].y && Math.pow(mouseX - arcs[4].x, 2) + Math.pow(mouseY - arcs[4].y, 2) < Math.pow(arcs[4].w, 2) && Math.pow(mouseX - arcs[5].x, 2) + Math.pow(mouseY - arcs[5].y, 2) > Math.pow(arcs[5].w, 2)){
         arcs[4].color = "#214d70"
     } else {
-        arcs[4].color = "#FFFFFF"
+        arcs[4].color = "#B5D3E7"
     }
     if(mouseX <= arcs[6].x && mouseY >= arcs[6].y && Math.pow(mouseX - arcs[6].x, 2) + Math.pow(mouseY - arcs[6].y, 2) < Math.pow(arcs[6].w, 2) && Math.pow(mouseX - arcs[7].x, 2) + Math.pow(mouseY - arcs[7].y, 2) > Math.pow(arcs[7].w, 2)){
         arcs[6].color = "#214d70"
     } else {
-        arcs[6].color = "#FFFFFF"
+        arcs[6].color = "#B5D3E7"
     }
 }
 
@@ -125,4 +133,13 @@ function Arc(x, y, w, h, start, stop, color) {
         this.color = c;
     }
 
+}
+function ImageComponemt(img, x, y, w, h){
+    Component.call(this, x, y, "#FFF");
+    this.w = w;
+    this.h = h;
+    this.img = img;
+    this.render =  () => {
+        image(img, this.x, this.y, this.w, this.h);
+    }
 }
