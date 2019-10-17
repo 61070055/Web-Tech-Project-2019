@@ -44,13 +44,13 @@ function update() {
     mouseOver()
     mainCircle.update(w / 2, h / 2, w / 12);
     arcs[0].update(w / 2 - 5, h / 2 - 5, w / 4.5, w / 4.5, PI, PI_HALF, arcs[0].color)
-    arcs[1].update(w / 2 - 5, h / 2 - 5, w / 11.7, w / 11.7, PI, PI_HALF, arcs[1].color)
+    arcs[1].update(w / 2 - 5, h / 2 - 5, w / 11.5, w / 11.5, PI, PI_HALF, arcs[1].color)
     arcs[2].update(w / 2 + 5, h / 2 - 5, w / 4.5, w / 4.5, PI_HALF, TWO_PI, arcs[2].color)
-    arcs[3].update(w / 2 + 5, h / 2 - 5, w / 11.7, w / 11.7, PI_HALF, TWO_PI, arcs[3].color)
+    arcs[3].update(w / 2 + 5, h / 2 - 5, w / 11.5, w / 11.5, PI_HALF, TWO_PI, arcs[3].color)
     arcs[4].update(w / 2 + 5, h / 2 + 5, w / 4.5, w / 4.5, TWO_PI, HALF_PI, arcs[4].color)
-    arcs[5].update(w / 2 + 5, h / 2 + 5, w / 11.7, w / 11.7, TWO_PI, HALF_PI, arcs[5].color)
+    arcs[5].update(w / 2 + 5, h / 2 + 5, w / 11.5, w / 11.5, TWO_PI, HALF_PI, arcs[5].color)
     arcs[6].update(w / 2 - 5, h / 2 + 5, w / 4.5, w / 4.5, HALF_PI, PI, arcs[6].color)
-    arcs[7].update(w / 2 - 5, h / 2 + 5, w / 11.7, w / 11.7, HALF_PI, PI, arcs[7].color)
+    arcs[7].update(w / 2 - 5, h / 2 + 5, w / 11.5, w / 11.5, HALF_PI, PI, arcs[7].color)
 
 }
 function mouseOver() {
