@@ -59,6 +59,7 @@ function update() {
     arcs[5].update(w / 2 + 5, h / 2 + 5, w / 11.5, w / 11.5, TWO_PI, HALF_PI, arcs[5].color)
     arcs[6].update(w / 2 - 5, h / 2 + 5, w / 4.5, w / 4.5, HALF_PI, PI, arcs[6].color)
     arcs[7].update(w / 2 - 5, h / 2 + 5, w / 11.5, w / 11.5, HALF_PI, PI, arcs[7].color)
+    imgs[0].update(imgs[0].image, arcs[7].x-w/4.2, arcs[7].y-w/30, w/3.7, w/3.7)
 
 }
 function mouseOver() {
@@ -141,5 +142,12 @@ function ImageComponemt(img, x, y, w, h){
     this.img = img;
     this.render =  () => {
         image(img, this.x, this.y, this.w, this.h);
+    }
+    this.update = (img, x, y, w, h) => {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.img = img;
     }
 }
