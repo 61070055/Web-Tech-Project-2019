@@ -6,6 +6,8 @@ const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
+const choiceD = document.getElementById("D");
+const choiceE = document.getElementById("E");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
@@ -14,11 +16,23 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
+        question : "A เป็นลูกชายของ C ; C กับ Q เป็นพี่สาว/น้องสาวกัน ; Z เป็นแม่ของ Q และ P เป็นบุตรของ Z ข้อใดต่อไปนี้เป็นจริง",
+        imgSrc : "img/testq3.png",
+        choiceA : "P เป็นพ่อของ A",
+        choiceB : "P เป็นพี่ชาย/น้องชาย ของ C",
+        choiceC : "A เป็นลูกชายของ Z",
+        choiceD : "Q เป็นพี่สาว/น้องสาวของ A",
+        choiceE : "ไม่มีคำตอบที่ถูก",
+        correct : "B"
+    },
+    {
         question : "ไอหมอนี้แม่งใคร ?",
         imgSrc : "img/testq.png",
         choiceA : "ไอบัง",
         choiceB : "ไอจวยหัวเค",
         choiceC : "พี่ไอซ์สุดเทพ",
+        choiceD : "ไอบัง",
+        choiceE : "ไอบัง",
         correct : "A"
     },{
         question : "ไอนี้ล่ะ ?",
@@ -26,6 +40,8 @@ let questions = [
         choiceA : "ไอเชี่ยบัง",
         choiceB : "โอมไง",
         choiceC : "ตินโต",
+        choiceD : "ไอบัง",
+        choiceE : "ไอบัง",
         correct : "C"
     },{
         question : "สุดท้ายล่ะไอนี้ใคร",
@@ -33,14 +49,9 @@ let questions = [
         choiceA : "ตินโต",
         choiceB : "จวยหัวเค",
         choiceC : "ไอบังอีกอ่ะ",
+        choiceD : "ไอบัง",
+        choiceE : "ไอบัง",
         correct : "B"
-    },{
-        question : "ไก่กับไข่อะไรเกิดก่อนกัน",
-        imgSrc : "img/testq3.png",
-        choiceA : "ไก่",
-        choiceB : "ไข่",
-        choiceC : "ไม่รู้โว้ย",
-        correct : "C"
     }
 ];
 
@@ -64,6 +75,8 @@ function renderQuestion(){
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+    choiceE.innerHTML = q.choiceE;
 }
 
 start.addEventListener("click",startQuiz);
