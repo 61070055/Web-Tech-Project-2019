@@ -60,7 +60,7 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 60; // 60s
+const questionTime = 120; // 60s
 const gaugeWidth = 11; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
