@@ -17,7 +17,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "A เป็นลูกชายของ C ; C กับ Q เป็นพี่สาว/น้องสาวกัน ; Z เป็นแม่ของ Q และ P เป็นบุตรของ Z ข้อใดต่อไปนี้เป็นจริง",
-        imgSrc : "img/testq3.png",
+        imgSrc : "img/test.png",
         choiceA : "P เป็นพ่อของ A",
         choiceB : "P เป็นพี่ชาย/น้องชาย ของ C",
         choiceC : "A เป็นลูกชายของ Z",
@@ -27,7 +27,7 @@ let questions = [
     },
     {
         question : "ไอหมอนี้แม่งใคร ?",
-        imgSrc : "img/testq.png",
+        imgSrc : "img/test.png",
         choiceA : "ไอบัง",
         choiceB : "ไอจวยหัวเค",
         choiceC : "พี่ไอซ์สุดเทพ",
@@ -36,7 +36,7 @@ let questions = [
         correct : "A"
     },{
         question : "ไอนี้ล่ะ ?",
-        imgSrc : "img/testq2.png",
+        imgSrc : "img/test.png",
         choiceA : "ไอเชี่ยบัง",
         choiceB : "โอมไง",
         choiceC : "ตินโต",
@@ -45,7 +45,7 @@ let questions = [
         correct : "C"
     },{
         question : "สุดท้ายล่ะไอนี้ใคร",
-        imgSrc : "img/testq3.png",
+        imgSrc : "img/test.png",
         choiceA : "ตินโต",
         choiceB : "จวยหัวเค",
         choiceC : "ไอบังอีกอ่ะ",
@@ -172,6 +172,6 @@ function scoreRender(){
     
     scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
-    scoreDiv.innerHTML += "<a href='../Page/Decomposition.html' id='back'>Back</a>";
-    scoreDiv.innerHTML += "<a href='result/logic_result.html' id='result'>Result</a>";
+    scoreDiv.innerHTML += "<a href='../Page/Decomposition.html' id='back'>กลับสู่หน้าหลัก</a>";
+    scoreDiv.innerHTML += "<a href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
 }
