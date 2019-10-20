@@ -88,6 +88,15 @@ let questions = [
         choiceD : "90",
         choiceE : "97",
         correct : "C"
+    },{
+        question : "จงเรียงคำที่ให้ไว้ด้านล่างตามลำดับที่มีความหมาย <br> 1.Leaves <br> 2.Branch <br> 3.Flower <br> 4.Tree <br> 5.Fruit",
+        imgSrc : "img/test.png",
+        choiceA : "4,3,1,2,5",
+        choiceB : "4,3,2,1,5",
+        choiceC : "4,2,5,3,1",
+        choiceD : "4,2,3,1,5",
+        choiceE : "4,2,1,3,5",
+        correct : "E"
     }
 ];
 
