@@ -62,7 +62,7 @@ let questions = [
         choiceE : "5040",
         correct : "E"
     },{
-        question : "(7*7)3 ÷ (49*7)3 * (2401)2 = 7x",
+        question : "(7*7)^3 ÷ (49*7)^3 * (2401)^2 = 7x",
         imgSrc : "img/test.png",
         choiceA : "5",
         choiceB : "6",
@@ -80,7 +80,7 @@ let questions = [
         choiceE : "736.3",
         correct : "C"
     },{
-        question : "(9.96)3 – (25.9)2 + (2.9)5 = ?",
+        question : "(9.96)^3 – (25.9)^2 + (2.9)^5 = ?",
         imgSrc : "img/test.png",
         choiceA : "80",
         choiceB : "88",
