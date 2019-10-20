@@ -26,32 +26,32 @@ let questions = [
         correct : "B"
     },
     {
-        question : "ไอหมอนี้แม่งใคร ?",
+        question : "ให้ดู pattern ดังต่อไปนี้และ เลขคู่ใดดังต่อไปนี้คือเลขถัดไป ? <br> <b>7 9 66 12 14 66 17</b>",
         imgSrc : "img/test.png",
-        choiceA : "ไอบัง",
-        choiceB : "ไอจวยหัวเค",
-        choiceC : "พี่ไอซ์สุดเทพ",
-        choiceD : "ไอบัง",
-        choiceE : "ไอบัง",
+        choiceA : "19 66",
+        choiceB : "66 19",
+        choiceC : "19 22",
+        choiceD : "20 66",
+        choiceE : "66 20",
         correct : "A"
     },{
-        question : "ไอนี้ล่ะ ?",
+        question : "1, 2, 6, 24, ?, 720",
         imgSrc : "img/test.png",
-        choiceA : "ไอเชี่ยบัง",
-        choiceB : "โอมไง",
-        choiceC : "ตินโต",
-        choiceD : "ไอบัง",
-        choiceE : "ไอบัง",
-        correct : "C"
+        choiceA : "100",
+        choiceB : "104",
+        choiceC : "108",
+        choiceD : "120",
+        choiceE : "134",
+        correct : "D"
     },{
-        question : "สุดท้ายล่ะไอนี้ใคร",
+        question : "5760, 960, ?, 48, 16, 8",
         imgSrc : "img/test.png",
-        choiceA : "ตินโต",
-        choiceB : "จวยหัวเค",
-        choiceC : "ไอบังอีกอ่ะ",
-        choiceD : "ไอบัง",
-        choiceE : "ไอบัง",
-        correct : "B"
+        choiceA : "120",
+        choiceB : "160",
+        choiceC : "192",
+        choiceD : "240",
+        choiceE : "274",
+        correct : "C"
     }
 ];
 
