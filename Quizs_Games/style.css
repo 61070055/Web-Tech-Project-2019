@@ -143,17 +143,26 @@ body{
     /* width : 59px;
     height :59px; */
     top:25vh;
-    left:31vw;
+    left:30.2vw;
     font-size: 4vh;
     font-weight: bold;
     text-align: center;
 }
 
-#scoreContainer a{
+#back{
     position: absolute;
     font-size: 3vh;
     text-align: center;
     font-weight: bold;
     top: 68vh;
     left: 58vw;
+}
+
+#result{
+    position: absolute;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: bold;
+    top: 68vh;
+    left: 2vw;
 }

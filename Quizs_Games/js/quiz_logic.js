@@ -172,5 +172,6 @@ function scoreRender(){
     
     scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
-    scoreDiv.innerHTML += "<a href='../Page/Decomposition.html'>Back</a>";
+    scoreDiv.innerHTML += "<a href='../Page/Decomposition.html' id='back'>Back</a>";
+    scoreDiv.innerHTML += "<a href='result/logic_result.html' id='result'>Result</a>";
 }
