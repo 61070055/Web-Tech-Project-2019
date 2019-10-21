@@ -62,6 +62,13 @@ function update() {
     imgs[0].update(imgs[0].image, arcs[7].x-w/4.2, arcs[7].y-w/30, w/3.7, w/3.7)
 
 }
+
+// on clicked
+function mouseClicked(){
+    if(mouseX <= arcs[6].x && mouseY >= arcs[6].y && Math.pow(mouseX - arcs[6].x, 2) + Math.pow(mouseY - arcs[6].y, 2) < Math.pow(arcs[6].w, 2) && Math.pow(mouseX - arcs[7].x, 2) + Math.pow(mouseY - arcs[7].y, 2) > Math.pow(arcs[7].w, 2)){
+        self.location="Page/Decomposition.html";
+    }
+}
 function mouseOver() {
     if(Math.pow(mouseX - mainCircle.x, 2) + Math.pow(mouseY - mainCircle.y, 2) < Math.pow(mainCircle.diameter, 2)){
         mainCircle.color = "#214d70"
