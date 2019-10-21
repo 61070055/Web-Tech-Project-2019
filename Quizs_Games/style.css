@@ -137,6 +137,8 @@ body{
 }
 #scoreContainer img{
     position: absolute;
+    width : 59px;
+    height :59px;
     top:20vh;
     left:30vw;
 }
@@ -193,6 +195,14 @@ body{
         height : 205px;
         border-top-left-radius: 5px;
     }
+    #back{
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 68vh;
+        left: 50vw;
+    }
 }
 
 @media only screen and (max-width: 825px){
@@ -246,6 +256,14 @@ body{
         margin-top : -10px;
         margin-left : 25px;
     }
+    #back{
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 68vh;
+        left: 47vw;
+    }
 }
 
 @media only screen and (max-width: 645px) {
@@ -286,6 +304,19 @@ body{
         border-radius: 5px;
         cursor: pointer;
         padding : 5px;
+    }
+    #scoreContainer img{
+        position: absolute;
+        top:20vh;
+        left:30vw;
+    }
+    #back{
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 68vh;
+        left: 46vw;
     }
 }
 
@@ -335,5 +366,41 @@ body{
         width : 30vmin;
         height : 35vmin;
         border-top-left-radius: 5px;
+    }
+    #scoreContainer img{
+        position: absolute;
+        width : 39px;
+        height :39px;
+        top:20vh;
+        left:29vw;
+    }
+    #scoreContainer p{
+        position: absolute;
+        display: block;
+        /* width : 59px;
+        height :59px; */
+        top:25vh;
+        left:30.5vw;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #back{
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 68vh;
+        left: 45vw;
+    }
+    
+    #result{
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 68vh;
+        left: 2vw;
     }
 }

@@ -215,7 +215,8 @@ function scoreRender(){
               (scorePerCent >= 20) ? "img/bad_face.png" :
               "img/bad_face.png";
     
-    scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
+    // scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
+    scoreDiv.innerHTML = "<img src="+ img + ">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
     scoreDiv.innerHTML += "<a href='../Page/Decomposition.html' id='back'>กลับสู่หน้าหลัก</a>";
     scoreDiv.innerHTML += "<a href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
