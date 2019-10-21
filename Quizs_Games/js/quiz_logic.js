@@ -52,6 +52,42 @@ let questions = [
         choiceD : "240",
         choiceE : "274",
         correct : "C"
+    },{
+        question : "16, 24, 48, 120, 360, 1260, ?",
+        imgSrc : "img/test.png",
+        choiceA : "3780",
+        choiceB : "4725",
+        choiceC : "5355",
+        choiceD : "5252",
+        choiceE : "5040",
+        correct : "E"
+    },{
+        question : "(7*7)3 ÷ (49*7)3 * (2401)2 = 7x",
+        imgSrc : "img/test.png",
+        choiceA : "5",
+        choiceB : "6",
+        choiceC : "4",
+        choiceD : "8",
+        choiceE : "3",
+        correct : "A"
+    },{
+        question : "23% of 1840 + 24% of 1260 = ?",
+        imgSrc : "img/test.png",
+        choiceA : "733",
+        choiceB : "724",
+        choiceC : "725.6",
+        choiceD : "734.5",
+        choiceE : "736.3",
+        correct : "C"
+    },{
+        question : "(9.96)3 – (25.9)2 + (2.9)5 = ?",
+        imgSrc : "img/test.png",
+        choiceA : "80",
+        choiceB : "88",
+        choiceC : "81",
+        choiceD : "90",
+        choiceE : "97",
+        correct : "C"
     }
 ];
 
