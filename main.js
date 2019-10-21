@@ -76,7 +76,7 @@ function update() {
 
 // on clicked
 function mouseClicked() {
-    if (mouseX <= arcs[6].x && mouseY >= arcs[6].y && Math.pow(mouseX - arcs[6].x, 2) + Math.pow(mouseY - arcs[6].y, 2) < Math.pow(arcs[6].w, 2) && Math.pow(mouseX - arcs[7].x, 2) + Math.pow(mouseY - arcs[7].y, 2) > Math.pow(arcs[7].w, 2)) {
+    if (mouseX <= arcs[0].x && mouseY <= arcs[0].y && Math.pow(mouseX - arcs[0].x, 2) + Math.pow(mouseY - arcs[0].y, 2) < Math.pow(arcs[0].w, 2) && Math.pow(mouseX - arcs[1].x, 2) + Math.pow(mouseY - arcs[1].y, 2) > Math.pow(arcs[1].w, 2)) {
         self.location = "Page/Decomposition.html";
     }
 }
