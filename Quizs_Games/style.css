@@ -1,11 +1,11 @@
 body{
-    font-size: 3vh;
+    font-size: 3vmin;
     font-family: monospace;
     background: lightblue;
 }
 
 #container{
-    margin : 20px auto;
+    margin : 3vmin auto;
     background-color: white;
     height: 90vh;
     width : 80vw;
@@ -14,11 +14,11 @@ body{
     position: relative;
 }
 #start{
-    font-size: 5vh;
+    font-size: 5vmin;
     font-weight: bolder;
     word-break: break-all;
-    width:8vw;
-    height:15vh;
+    width:15vmin;
+    height:20vmin;
     border : 2px solid #417FAF;
     text-align: center;
     cursor: pointer;
@@ -35,21 +35,21 @@ body{
 }
 
 #qImg{
-    width : 30vw;
-    height : 50vh;
+    width : 40vmin;
+    height : 50vmin;
     position: absolute;
     left : 0vw;
     top : 0vh;
 }
 #qImg img{
-    width : 30vw;
-    height : 50vh;
+    width : 50vmin;
+    height : 50vmin;
     border-top-left-radius: 5px;
 }
 
 #question{
-    width: 45vw;
-    height : 25vh;
+    width: 90vmin;
+    height : 35vmin;
     position: absolute;
     right:0;
     top:0;
@@ -57,21 +57,21 @@ body{
 #question p{
     margin : 0;
     padding : 15px;
-    font-size: 3vh;
+    font-size: 3vmin;
 }
 
 #choices{
-    width : 40vw;
+    width : 90vmin;
     position: absolute;
     right : 0%;
-    top : 40vh;
+    top : 40%;
     padding : 10px;
 }
 .choice{
     display: inline-block;
-    width : 30vw;
+    width : 60vmin;
     text-align: center;
-    border : 1px solid grey;
+    border : 0.25px solid grey;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
@@ -85,30 +85,30 @@ body{
 
 #timer{
     position: absolute;
-    height : 15vh;
-    width : 15vw;
+    height : 15vmin;
+    width : 30vmin;
     bottom : 0px;
     text-align: center;
 }
 #counter{
-    font-size: 10vh;
+    font-size: 6vmin;
 }
 #btimeGauge{
-    width : 11vw;
-    height : 1.5vh;
+    width : 20vmin;
+    height : 1.5vmin;
     border-radius: 10px;
     background-color: lightgray;
     margin-left : 25px;
 }
 #timeGauge{
-    height : 10px;
+    height : 1.6vmin;
     border-radius: 10px;
     background-color: mediumseagreen;
     margin-top : -10px;
     margin-left : 25px;
 }
 #progress{
-    width : 50vw;
+    width : 100vmin;
     position: absolute;
     bottom : 0px;
     right : 0px;
@@ -116,8 +116,8 @@ body{
     text-align: right;
 }
 .prog{
-    width : 25px;
-    height : 25px;
+    width : 4vmin;
+    height : 4vmin;
     border: 1px solid #000;
     display: inline-block;
     border-radius: 50%;
@@ -147,14 +147,14 @@ body{
     height :59px; */
     top:25vh;
     left:30.2vw;
-    font-size: 4vh;
+    font-size: 4vmin;
     font-weight: bold;
     text-align: center;
 }
 
 #back{
     position: absolute;
-    font-size: 3vh;
+    font-size: 3vmin;
     text-align: center;
     font-weight: bold;
     top: 68vh;
@@ -163,7 +163,7 @@ body{
 
 #result{
     position: absolute;
-    font-size: 3vh;
+    font-size: 3vmin;
     text-align: center;
     font-weight: bold;
     top: 68vh;

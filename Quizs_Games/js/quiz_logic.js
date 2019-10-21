@@ -106,7 +106,7 @@ const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
 const questionTime = 120; // 60s
-const gaugeWidth = 11; // 150px
+const gaugeWidth = 20; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
@@ -148,7 +148,7 @@ function renderProgress(){
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "vw";
+        timeGauge.style.width = count * gaugeUnit + "vmin";
         count++
     }else{
         count = 0;
