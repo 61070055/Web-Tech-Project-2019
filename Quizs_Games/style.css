@@ -312,7 +312,7 @@ body{
     }
     #btimeGauge{
         width : 20vmin;
-        height : 1.8vmin;
+        height : 2vmin;
         border-radius: 10px;
         background-color: lightgray;
         margin-left : 25px;
