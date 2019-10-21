@@ -82,6 +82,12 @@ function mouseClicked() {
     if (mouseX >= arcs[2].x && mouseY <= arcs[2].y && Math.pow(mouseX - arcs[2].x, 2) + Math.pow(mouseY - arcs[2].y, 2) < Math.pow(arcs[2].w, 2) && Math.pow(mouseX - arcs[3].x, 2) + Math.pow(mouseY - arcs[3].y, 2) > Math.pow(arcs[3].w, 2)) {
         self.location = "Page/Pattern.html";
     }
+    if (mouseX >= arcs[4].x && mouseY >= arcs[4].y && Math.pow(mouseX - arcs[4].x, 2) + Math.pow(mouseY - arcs[4].y, 2) < Math.pow(arcs[4].w, 2) && Math.pow(mouseX - arcs[5].x, 2) + Math.pow(mouseY - arcs[5].y, 2) > Math.pow(arcs[5].w, 2)) {
+        self.location = "Page/Abstraction.html";
+    }
+    if (mouseX <= arcs[6].x && mouseY >= arcs[6].y && Math.pow(mouseX - arcs[6].x, 2) + Math.pow(mouseY - arcs[6].y, 2) < Math.pow(arcs[6].w, 2) && Math.pow(mouseX - arcs[7].x, 2) + Math.pow(mouseY - arcs[7].y, 2) > Math.pow(arcs[7].w, 2)) {
+        self.location = "Page/Algorithm.html";
+    }
 }
 function mouseOver() {
     if (Math.pow(mouseX - mainCircle.x, 2) + Math.pow(mouseY - mainCircle.y, 2) < Math.pow(mainCircle.diameter, 2)) {
