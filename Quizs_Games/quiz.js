@@ -61,7 +61,7 @@ const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
 const questionTime = 60; // 60s
-const gaugeWidth = 150; // 150px
+const gaugeWidth = 11; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
@@ -103,7 +103,7 @@ function renderProgress(){
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
+        timeGauge.style.width = count * gaugeUnit + "vw";
         count++
     }else{
         count = 0;
@@ -163,7 +163,7 @@ function scoreRender(){
     
     // choose the image based on the scorePerCent
     // size of pic 59x59
-    let style_img = "style='width: 59px; height: 59px;'"
+    let style_img = "style='width: 5vw; height: 10vh;'"
     let img = (scorePerCent >= 80) ? "img/smile_face.png" :
               (scorePerCent >= 60) ? "img/ok_face.png" :
               (scorePerCent >= 40) ? "img/ok_face.png" :
