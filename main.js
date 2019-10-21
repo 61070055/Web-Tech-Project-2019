@@ -79,6 +79,9 @@ function mouseClicked() {
     if (mouseX <= arcs[0].x && mouseY <= arcs[0].y && Math.pow(mouseX - arcs[0].x, 2) + Math.pow(mouseY - arcs[0].y, 2) < Math.pow(arcs[0].w, 2) && Math.pow(mouseX - arcs[1].x, 2) + Math.pow(mouseY - arcs[1].y, 2) > Math.pow(arcs[1].w, 2)) {
         self.location = "Page/Decomposition.html";
     }
+    if (mouseX >= arcs[2].x && mouseY <= arcs[2].y && Math.pow(mouseX - arcs[2].x, 2) + Math.pow(mouseY - arcs[2].y, 2) < Math.pow(arcs[2].w, 2) && Math.pow(mouseX - arcs[3].x, 2) + Math.pow(mouseY - arcs[3].y, 2) > Math.pow(arcs[3].w, 2)) {
+        self.location = "Page/Pattern.html";
+    }
 }
 function mouseOver() {
     if (Math.pow(mouseX - mainCircle.x, 2) + Math.pow(mouseY - mainCircle.y, 2) < Math.pow(mainCircle.diameter, 2)) {
