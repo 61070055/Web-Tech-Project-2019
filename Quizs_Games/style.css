@@ -312,13 +312,13 @@ body{
     }
     #btimeGauge{
         width : 20vmin;
-        height : 2vmin;
+        height : 10px;
         border-radius: 10px;
         background-color: lightgray;
         margin-left : 25px;
     }
     #timeGauge{
-        height : 2vmin;
+        height : 10px;
         border-radius: 10px;
         background-color: mediumseagreen;
         margin-top : -10px;
