@@ -83,10 +83,10 @@ function mouseClicked() {
         self.location = "Page/Pattern.html";
     }
     if (mouseX >= arcs[4].x && mouseY >= arcs[4].y && Math.pow(mouseX - arcs[4].x, 2) + Math.pow(mouseY - arcs[4].y, 2) < Math.pow(arcs[4].w, 2) && Math.pow(mouseX - arcs[5].x, 2) + Math.pow(mouseY - arcs[5].y, 2) > Math.pow(arcs[5].w, 2)) {
-        self.location = "Page/Abstraction.html";
+        self.location = "Page/Algorithm.html";
     }
     if (mouseX <= arcs[6].x && mouseY >= arcs[6].y && Math.pow(mouseX - arcs[6].x, 2) + Math.pow(mouseY - arcs[6].y, 2) < Math.pow(arcs[6].w, 2) && Math.pow(mouseX - arcs[7].x, 2) + Math.pow(mouseY - arcs[7].y, 2) > Math.pow(arcs[7].w, 2)) {
-        self.location = "Page/Algorithm.html";
+        self.location = "Page/Abstraction.html";
     }
 }
 function mouseOver() {
