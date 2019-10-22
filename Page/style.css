@@ -138,3 +138,13 @@ li a:hover {
     background-color: #417FAF;
     color: #fff;
 }
+.txt_d2{
+    position: relative;
+    left: 44vw;
+    bottom: 14vh;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: right;
+    margin-top: 0px;
+    font-size: 20px;
+}
