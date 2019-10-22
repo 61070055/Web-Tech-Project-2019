@@ -1,0 +1,16 @@
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.sub-container1 {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.item1 {
+    width: 30%
+}
