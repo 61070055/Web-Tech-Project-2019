@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    background: #417FAF
+}
+
+.hover {
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.hover:hover {
+    fill: #214d70;
+    opacity: 0.7;
+}
+#mainCircle {
+    transition: 0.7s;
+}
+#mainCircle:hover {
+    fill: #214d70;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 85vmin;
+    height: 85vmin;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    display: inline-block;
+}
+
+.sub-container {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+}
+
+.circle {
+    position: absolute;
+    top: var(--t);
+    left: var(--l);
+}
+
+[circle="1"] {
+    --t: 0;
+    --l: 0
+}
+
+[circle="2"] {
+    --t: 0;
+    --l: 50%
+}
+
+[circle="3"] {
+    --t: 50%;
+    --l: 0
+}
+
+[circle="4"] {
+    --t: 50%;
+    --l: 50%
+}
+
+img {
+    width: 90%
+}
