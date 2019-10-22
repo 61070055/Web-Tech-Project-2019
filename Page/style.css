@@ -9,7 +9,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #ECBE62;
-  width: 90%;
+  width: 90vw;
 }
 
 #rt {
@@ -42,9 +42,9 @@ li a:hover {
   background-color: #DBAC50;
 }
 .im_d1{
-  position: absolute;
-    top: 33vh;
-    left: 60vw;
+  position: relative;
+    top: -10vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     width: 15vw;
 
@@ -66,22 +66,22 @@ li a:hover {
   height: 260px;
 }
 .h3_d2{
-  position: absolute;
-    top: 57vh;
-    left: 85vw;
+  position: relative;
+    top: 8vh;
+    left: 125vw;
     transform: translate(-50%, -50%);
     color: #fff;
 }
 .car{
-  position: absolute;
-    top: 75vh;
+  position: relative;
+    top: 8vh;
     left: 30vw;
     transform: translate(-50%, -50%);
     width: 15vw;
 }
 .s1{
-  position: absolute;
-    top: 115vh;
+  position: relative;
+    top: 21vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -103,9 +103,9 @@ li a:hover {
   width: 150px;
   height: 50px;
   font-size: 20px;
-  position: absolute;
-    top: 138vh;
-    left: 50vw;
+  position: relative;
+    top: 30vh;
+    left: 35vw;
     transform: translate(-50%, -50%);
 }
 .d3{
