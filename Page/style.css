@@ -107,11 +107,11 @@ li a:hover {
   font-size: 20px;
   position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 31.5%;
 }
 .d3{
   height: 55%;
+  width: 100%;
 }
 .d4{
   background-color: #417FAF;
