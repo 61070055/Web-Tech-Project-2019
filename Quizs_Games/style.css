@@ -157,10 +157,10 @@ body {
 
 #scoreContainer img {
     position: absolute;
-    width: 200;
-    height: 200;
-    top: 5vh;
-    left: 10vw;
+    width: 100px;
+    height: 100px;
+    top: 13vh;
+    left: 12vw;
 }
 
 #scoreContainer p {
@@ -326,10 +326,10 @@ body {
     }
     #scoreContainer img {
         position: absolute;
-        width: 200;
-        height: 200;
-        top: 5vh;
-        left: 10vw;
+        width: 70px;
+        height: 70px;
+        top: 17vh;
+        left: 12vw;
     }
     #back {
         position: absolute;
@@ -390,10 +390,10 @@ body {
     }
     #scoreContainer img {
         position: absolute;
-        width: 200;
-        height: 200;
-        top: 5vh;
-        left: 10vw;
+        width: 45px;
+        height: 45px;
+        top: 21vh;
+        left: 13vw;
     }
     #scoreContainer p {
         position: absolute;
