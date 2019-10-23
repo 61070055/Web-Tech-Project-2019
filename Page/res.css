@@ -11,7 +11,7 @@
 .sub-container1 {
     width: 50%;
     display: inline-block;
-    min-width: 350px;
+    min-width: 300px;
     position: relative;
     left: 0;
     top: 0;
@@ -20,7 +20,7 @@
 .sub-container2 {
     width: 50%;
     display: inline-block;
-    min-width: 350px;
+    min-width: 300px;
     position: relative;
     left: 0;
     top: 0;
