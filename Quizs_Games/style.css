@@ -191,28 +191,81 @@ body {
     left: 11.7vw;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     #question {
-        width: 70vmin;
+        width: 44vmin;
         height: 50vmin;
         position: absolute;
         right: 0;
         top: 0;
     }
     #question p {
-        font-size: 20px;
+        font-size: 22px;
+    }
+    #choices {
+        width: 63vmin;
+        position: absolute;
+        right: 0%;
+        top: 40%;
+        padding: 10px;
+    }
+    .choice {
+        display: inline-block;
+        width: 45vmin;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+        margin: 6px;
     }
     #qImg {
-        width: 226px;
-        height: 215px;
+        width: 366px;
+        height: 356px;
         position: absolute;
         left: 0vw;
         top: 0vh;
     }
     #qImg img {
-        width: 266px;
-        height: 205px;
+        width: 366px;
+        height: 356px;
         border-top-left-radius: 5px;
+    }
+    #progress {
+        width: 52vmin;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        padding: 5px;
+        text-align: right;
+    }
+    #scoreContainer {
+        margin: 20px auto;
+        background-color: #ECBE62;
+        opacity: 0.98;
+        height: 55vh;
+        width: 51vw;
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px 0px grey;
+        position: relative;
+        display: none;
+        top: 100px;
+    }
+    #scoreContainer img {
+        position: absolute;
+        width: 150;
+        height: 150;
+        top: 13vh;
+        left: 19vw;
+    }
+    #scoreContainer p {
+        position: absolute;
+        display: block;
+        top: 19vh;
+        left: 20.5vw;
+        font-size: 6vmin;
+        font-weight: bold;
+        text-align: center;
     }
     #back {
         position: absolute;
@@ -220,7 +273,15 @@ body {
         text-align: center;
         font-weight: bold;
         top: 39vh;
-        left: 11vw;
+        left: 18vw;
+    }
+    #result {
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 45vh;
+        left: 19.5vw;
     }
 }
 
@@ -233,10 +294,10 @@ body {
         top: 0;
     }
     #question p {
-        font-size: 20px;
+        font-size: 19px;
     }
     #choices {
-        width: 80vmin;
+        width: 60vmin;
         position: absolute;
         right: 0%;
         top: 40%;
@@ -250,6 +311,18 @@ body {
         border-radius: 5px;
         cursor: pointer;
         padding: 5px;
+    }
+    #qImg {
+        width: 266px;
+        height: 305px;
+        position: absolute;
+        left: 0vw;
+        top: 0vh;
+    }
+    #qImg img {
+        width: 266px;
+        height: 305px;
+        border-top-left-radius: 5px;
     }
     #timer {
         position: absolute;
@@ -272,8 +345,17 @@ body {
         position: absolute;
         width: 85px;
         height: 85px;
-        top: 15vh;
-        left: 12vw;
+        top: 16vh;
+        left: 20vw;
+    }
+    #scoreContainer p {
+        position: absolute;
+        display: block;
+        top: 20vh;
+        left: 20.5vw;
+        font-size: 5vmin;
+        font-weight: bold;
+        text-align: center;
     }
     #timeGauge {
         height: 1.6vmin;
@@ -287,36 +369,44 @@ body {
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 39vh;
-        left: 11vw;
+        top: 37vh;
+        left: 17vw;
+    }
+    #result {
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 45vh;
+        left: 18.6vw;
     }
 }
 
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 600px) {
     #question {
-        width: 30vmin;
+        width: 38vmin;
         height: 50vmin;
         position: absolute;
         right: 0;
         top: 0;
     }
     #question p {
-        font-size: 13px;
+        font-size: 11px;
     }
     #qImg {
-        width: 226px;
-        height: 215px;
+        width: 180px;
+        height: 191px;
         position: absolute;
         left: 0vw;
         top: 0vh;
     }
     #qImg img {
-        width: 226px;
-        height: 199px;
+        width: 180px;
+        height: 191px;
         border-top-left-radius: 5px;
     }
     #choices {
-        width: 70vmin;
+        width: 57vmin;
         position: absolute;
         right: 0%;
         top: 40%;
@@ -330,39 +420,19 @@ body {
         border-radius: 5px;
         cursor: pointer;
         padding: 5px;
+        margin: 3px;
     }
     #scoreContainer img {
         position: absolute;
         width: 70px;
         height: 70px;
         top: 17vh;
-        left: 12vw;
+        left: 9.5vw;
     }
-    #back {
+    #timer{
         position: absolute;
-        font-size: 3vmin;
-        text-align: center;
-        font-weight: bold;
-        top: 39vh;
-        left: 11vw;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #question {
-        width: 50vmin;
-        height: 40vmin;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    #question p {
-        font-size: 13px;
-    }
-    #timer {
-        position: absolute;
-        height: 40px;
-        width: 150px;
+        height: 10vmin;
+        width: 31vmin;
         bottom: 50px;
         text-align: center;
     }
@@ -371,21 +441,109 @@ body {
     }
     #btimeGauge {
         width: 20vmin;
-        height: 10px;
+        height: 8px;
         border-radius: 10px;
         background-color: lightgray;
         margin-left: 25px;
     }
+    
     #timeGauge {
-        height: 10px;
+        height: 8px;
         border-radius: 10px;
         background-color: mediumseagreen;
-        margin-top: -10px;
+        margin-top: -8px;
         margin-left: 25px;
+    }
+    #scoreContainer p {
+        position: absolute;
+        display: block;
+        top: 23.7vh;
+        left: 22.5vw;
+        font-size: 4vmin;
+        font-weight: bold;
+        text-align: center;
+    }
+    #scoreContainer img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 19vh;
+        left: 20.5vw;
+    }
+    #back {
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 39vh;
+        left: 18vw;
+    }
+    #result {
+        position: absolute;
+        font-size: 3vmin;
+        text-align: center;
+        font-weight: bold;
+        top: 45vh;
+        left: 19.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    #question {
+        width: 50vmin;
+        height: 60vmin;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #question p {
+        font-size: 10px;
+    }
+    #choices {
+        width: 59vmin;
+        position: absolute;
+        right: 0%;
+        top: 38%;
+        padding: 10px;
+    }
+    .choice {
+        display: inline-block;
+        width: 40vmin;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px;
+        margin: 3px;
+    }
+    #timer {
+        position: absolute;
+        height: 15px;
+        width: 100px;
+        bottom: 50px;
+        text-align: center;
+    }
+    #counter {
+        font-size: 4vmin;
+    }
+    #btimeGauge {
+        width: 20vmin;
+        height: 6px;
+        border-radius: 10px;
+        background-color: lightgray;
+        margin-left: 15px;
+    }
+    #timeGauge {
+        height: 6px;
+        border-radius: 10px;
+        background-color: mediumseagreen;
+        margin-top: -6px;
+        margin-left: 15px;
     }
     #qImg {
         width: 30vmin;
-        height: 60vmin;
+        height: 35vmin;
         position: absolute;
         left: 0vw;
         top: 0vh;
@@ -399,14 +557,14 @@ body {
         position: absolute;
         width: 45px;
         height: 45px;
-        top: 21vh;
-        left: 13vw;
+        top: 19vh;
+        left: 19vw;
     }
     #scoreContainer p {
         position: absolute;
         display: block;
         top: 25vh;
-        left: 14vw;
+        left: 21vw;
         font-size: 4vmin;
         font-weight: bold;
         text-align: center;
@@ -416,15 +574,15 @@ body {
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 39vh;
-        left: 11vw;
+        top: 37vh;
+        left: 16vw;
     }
     #result {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 45vh;
-        left: 11.7vw;
+        top: 43vh;
+        left: 17.4vw;
     }
 }

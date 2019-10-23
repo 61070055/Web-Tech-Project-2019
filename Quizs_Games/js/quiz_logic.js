@@ -221,6 +221,6 @@ function scoreRender() {
     // scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
-    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;'href='../Page/Decomposition.html' id='back'>กลับสู่หน้าหลัก</a>";
+    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;'href='../Page/Decomposition_responsive.html' id='back'>กลับสู่หน้าหลัก</a>";
     scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;' href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
 }
