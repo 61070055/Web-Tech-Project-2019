@@ -1,406 +1,423 @@
-body{
+body {
     font-size: 3vmin;
     font-family: monospace;
-    background: lightblue;
+    background: #417FAF;
+    font-family: 'Kanit', sans-serif;
 }
 
-#container{
-    margin : 3vmin auto;
+#container {
+    margin: 3vmin auto;
     background-color: white;
     height: 90vh;
-    width : 80vw;
+    width: 80vw;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
-#start{
+
+#start {
     font-size: 5vmin;
     font-weight: bolder;
     word-break: break-all;
-    width:15vmin;
-    height:20vmin;
-    border : 2px solid #417FAF;
+    width: 15vmin;
+    height: 20vmin;
+    border: 2px solid #417FAF;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    transform: translate(-50%,-50%);
-    left:50%;
-    top:50%;
-    color : #417FAF;
-}
-#start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
-    background: rgb(234, 243, 103);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    color: #417FAF;
 }
 
-#qImg{
-    width : 40vmin;
-    height : 50vmin;
-    position: absolute;
-    left : 0vw;
-    top : 0vh;
+#start:hover {
+    border: 3px solid lightseagreen;
+    color: lightseagreen;
+    background: rgb(234, 243, 103);
+    transition: 0.1s;
 }
-#qImg img{
-    width : 300px;
-    height : 299px;
+
+#qImg {
+    width: 40vmin;
+    height: 50vmin;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+}
+
+#qImg img {
+    width: 300px;
+    height: 299px;
     border-top-left-radius: 5px;
 }
 
-#question{
+#question {
     width: 90vmin;
-    height : 35vmin;
+    height: 35vmin;
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 15px;
 }
-#question p{
-    margin : 0;
-    padding : 15px;
+
+#question p {
+    margin: 0;
+    padding: 15px;
     font-size: 3vmin;
 }
 
-#choices{
-    width : 90vmin;
+#choices {
+    width: 90vmin;
     position: absolute;
-    right : 0%;
-    top : 40%;
-    padding : 10px;
+    right: 0%;
+    top: 40%;
+    padding: 10px;
 }
-.choice{
+
+.choice {
     display: inline-block;
-    width : 60vmin;
+    width: 60vmin;
     text-align: center;
-    border : 1px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
-    padding : 5px;
+    padding: 5px;
+    margin: 6px;
 }
-.choice:hover{
-    border : 2px solid grey;
+
+.choice:hover {
+    border: 2px solid grey;
     font-weight: bold;
     background: lightseagreen;
     color: white;
+    transition: 0.2s;
 }
 
-#timer{
+#timer {
     position: absolute;
-    height : 15vmin;
-    width : 30vmin;
-    bottom : 0px;
+    height: 15vmin;
+    width: 30vmin;
+    bottom: 0px;
     text-align: center;
 }
-#counter{
+
+#counter {
     font-size: 6vmin;
+    left: -10px;
 }
-#btimeGauge{
-    width : 20vmin;
-    height : 1.5vmin;
+
+#btimeGauge {
+    width: 20vmin;
+    height: 1.5vmin;
     border-radius: 10px;
     background-color: lightgray;
-    margin-left : 25px;
+    margin-left: 25px;
 }
-#timeGauge{
-    height : 1.6vmin;
+
+#timeGauge {
+    height: 1.6vmin;
     border-radius: 10px;
     background-color: mediumseagreen;
-    margin-top : -10px;
-    margin-left : 25px;
+    margin-top: -15px;
+    margin-left: 25px;
 }
-#progress{
-    width : 100vmin;
+
+#progress {
+    width: 100vmin;
     position: absolute;
-    bottom : 0px;
-    right : 0px;
-    padding:5px;
+    bottom: 10px;
+    right: 20px;
+    padding: 5px;
     text-align: right;
 }
-.prog{
-    width : 4vmin;
-    height : 4vmin;
-    border: 1px solid #000;
+
+.prog {
+    width: 2vmin;
+    height: 2vmin;
+    /* border: 0.1px solid #000; */
     display: inline-block;
     border-radius: 50%;
-    margin-left : 5px;
-    margin-right : 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px grey;
 }
-#scoreContainer{
-    margin : 20px auto;
-    background-color: white;
-    opacity: 0.8;
-    height: 75vh;
-    width : 65vw;
+
+#scoreContainer {
+    margin: 20px auto;
+    background-color: #ECBE62;
+    opacity: 0.98;
+    height: 55vh;
+    width: 30vw;
     border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
+    box-shadow: 0px 5px 5px 0px gray;
     position: relative;
     display: none;
+    top: 100px;
 }
-#scoreContainer img{
+
+#scoreContainer img {
     position: absolute;
-    width : 59px;
-    height :59px;
-    top:20vh;
-    left:30vw;
+    width: 200;
+    height: 200;
+    top: 5vh;
+    left: 10vw;
 }
-#scoreContainer p{
+
+#scoreContainer p {
     position: absolute;
     display: block;
-    /* width : 59px;
-    height :59px; */
-    top:25vh;
-    left:30.2vw;
-    font-size: 4vmin;
+    top: 19vh;
+    left: 12.5vw;
+    font-size: 7vmin;
     font-weight: bold;
     text-align: center;
 }
 
-#back{
+#back {
     position: absolute;
     font-size: 3vmin;
     text-align: center;
     font-weight: bold;
-    top: 68vh;
-    left: 53vw;
+    top: 39vh;
+    left: 11vw;
 }
 
-#result{
+#result {
     position: absolute;
     font-size: 3vmin;
     text-align: center;
     font-weight: bold;
-    top: 68vh;
-    left: 2vw;
+    top: 45vh;
+    left: 11.7vw;
 }
 
-@media only screen and (max-width: 1000px){
-    #question{
+@media only screen and (max-width: 1000px) {
+    #question {
         width: 70vmin;
-        height : 50vmin;
+        height: 50vmin;
         position: absolute;
-        right:0;
-        top:0;
+        right: 0;
+        top: 0;
     }
-    #question p{
+    #question p {
         font-size: 20px;
     }
-    #qImg{
-        width : 226px;
-        height : 215px;
+    #qImg {
+        width: 226px;
+        height: 215px;
         position: absolute;
-        left : 0vw;
-        top : 0vh;
+        left: 0vw;
+        top: 0vh;
     }
-    #qImg img{
-        width : 266px;
-        height : 205px;
+    #qImg img {
+        width: 266px;
+        height: 205px;
         border-top-left-radius: 5px;
     }
-    #back{
+    #back {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 68vh;
-        left: 50vw;
+        top: 39vh;
+        left: 11vw;
     }
 }
 
-@media only screen and (max-width: 825px){
-    #question{
+@media only screen and (max-width: 825px) {
+    #question {
         width: 45vmin;
-        height : 50vmin;
+        height: 50vmin;
         position: absolute;
-        right:0;
-        top:0;
+        right: 0;
+        top: 0;
     }
-    #question p{
+    #question p {
         font-size: 20px;
     }
-    #choices{
-        width : 80vmin;
+    #choices {
+        width: 80vmin;
         position: absolute;
-        right : 0%;
-        top : 40%;
-        padding : 10px;
+        right: 0%;
+        top: 40%;
+        padding: 10px;
     }
-    .choice{
+    .choice {
         display: inline-block;
-        width : 40vmin;
+        width: 40vmin;
         text-align: center;
-        border : 1px solid black;
+        border: 1px solid black;
         border-radius: 5px;
         cursor: pointer;
-        padding : 5px;
+        padding: 5px;
     }
-    #timer{
+    #timer {
         position: absolute;
-        height : 10vmin;
-        width : 30vmin;
-        bottom : 50px;
+        height: 10vmin;
+        width: 30vmin;
+        bottom: 50px;
         text-align: center;
     }
-    #counter{
+    #counter {
         font-size: 6vmin;
     }
-    #btimeGauge{
-        width : 20vmin;
-        height : 1.5vmin;
+    #btimeGauge {
+        width: 20vmin;
+        height: 1.5vmin;
         border-radius: 10px;
         background-color: lightgray;
-        margin-left : 25px;
+        margin-left: 25px;
     }
-    #timeGauge{
-        height : 1.6vmin;
+    #timeGauge {
+        height: 1.6vmin;
         border-radius: 10px;
         background-color: mediumseagreen;
-        margin-top : -10px;
-        margin-left : 25px;
+        margin-top: -10px;
+        margin-left: 25px;
     }
-    #back{
+    #back {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 68vh;
-        left: 47vw;
+        top: 39vh;
+        left: 11vw;
     }
 }
 
 @media only screen and (max-width: 645px) {
-    #question{
+    #question {
         width: 30vmin;
-        height : 50vmin;
+        height: 50vmin;
         position: absolute;
-        right:0;
-        top:0;
+        right: 0;
+        top: 0;
     }
-    #question p{
+    #question p {
         font-size: 13px;
     }
-    #qImg{
-        width : 226px;
-        height : 215px;
+    #qImg {
+        width: 226px;
+        height: 215px;
         position: absolute;
-        left : 0vw;
-        top : 0vh;
+        left: 0vw;
+        top: 0vh;
     }
-    #qImg img{
-        width : 226px;
-        height : 199px;
+    #qImg img {
+        width: 226px;
+        height: 199px;
         border-top-left-radius: 5px;
     }
-    #choices{
-        width : 70vmin;
+    #choices {
+        width: 70vmin;
         position: absolute;
-        right : 0%;
-        top : 40%;
-        padding : 10px;
+        right: 0%;
+        top: 40%;
+        padding: 10px;
     }
-    .choice{
+    .choice {
         display: inline-block;
-        width : 35vmin;
+        width: 35vmin;
         text-align: center;
-        border : 1px solid black;
+        border: 1px solid black;
         border-radius: 5px;
         cursor: pointer;
-        padding : 5px;
+        padding: 5px;
     }
-    #scoreContainer img{
+    #scoreContainer img {
         position: absolute;
-        top:20vh;
-        left:30vw;
+        width: 200;
+        height: 200;
+        top: 5vh;
+        left: 10vw;
     }
-    #back{
+    #back {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 68vh;
-        left: 46vw;
+        top: 39vh;
+        left: 11vw;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #question{
+    #question {
         width: 50vmin;
-        height : 40vmin;
+        height: 40vmin;
         position: absolute;
-        right:0;
-        top:0;
+        right: 0;
+        top: 0;
     }
-    #question p{
+    #question p {
         font-size: 13px;
     }
-    #timer{
+    #timer {
         position: absolute;
-        height : 40px;
-        width : 150px;
-        bottom : 50px;
+        height: 40px;
+        width: 150px;
+        bottom: 50px;
         text-align: center;
     }
-    #counter{
+    #counter {
         font-size: 5vmin;
     }
-    #btimeGauge{
-        width : 20vmin;
-        height : 10px;
+    #btimeGauge {
+        width: 20vmin;
+        height: 10px;
         border-radius: 10px;
         background-color: lightgray;
-        margin-left : 25px;
+        margin-left: 25px;
     }
-    #timeGauge{
-        height : 10px;
+    #timeGauge {
+        height: 10px;
         border-radius: 10px;
         background-color: mediumseagreen;
-        margin-top : -10px;
-        margin-left : 25px;
+        margin-top: -10px;
+        margin-left: 25px;
     }
-    #qImg{
-        width : 30vmin;
-        height : 60vmin;
+    #qImg {
+        width: 30vmin;
+        height: 60vmin;
         position: absolute;
-        left : 0vw;
-        top : 0vh;
+        left: 0vw;
+        top: 0vh;
     }
-    #qImg img{
-        width : 30vmin;
-        height : 35vmin;
+    #qImg img {
+        width: 30vmin;
+        height: 35vmin;
         border-top-left-radius: 5px;
     }
-    #scoreContainer img{
+    #scoreContainer img {
         position: absolute;
-        width : 39px;
-        height :39px;
-        top:20vh;
-        left:29vw;
+        width: 200;
+        height: 200;
+        top: 5vh;
+        left: 10vw;
     }
-    #scoreContainer p{
+    #scoreContainer p {
         position: absolute;
         display: block;
-        /* width : 59px;
-        height :59px; */
-        top:25vh;
-        left:30.5vw;
-        font-size: 10px;
+        top: 25vh;
+        left: 14vw;
+        font-size: 4vmin;
         font-weight: bold;
         text-align: center;
     }
-    
-    #back{
+    #back {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 68vh;
-        left: 45vw;
+        top: 39vh;
+        left: 11vw;
     }
-    
-    #result{
+    #result {
         position: absolute;
         font-size: 3vmin;
         text-align: center;
         font-weight: bold;
-        top: 68vh;
-        left: 2vw;
+        top: 45vh;
+        left: 11.7vw;
     }
 }
