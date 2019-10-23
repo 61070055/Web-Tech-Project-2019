@@ -12,6 +12,7 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+var status = 0;
 
 // create our questions
 let questions = [{
@@ -167,25 +168,27 @@ function renderCounter() {
 // checkAnwer
 
 function checkAnswer(answer) {
-    if (answer == questions[runningQuestion].correct) {
-        // answer is correct
-        score++;
-        // change progress color to green
-        answerIsCorrect();
-    } else {
-        // answer is wrong
-        // change progress color to red
-        answerIsWrong();
-    }
-    count = 0;
-    if (runningQuestion < lastQuestion) {
-        runningQuestion++;
-        renderQuestion();
-    } else {
-        // end the quiz and show the score
-        clearInterval(TIMER);
-        scoreRender();
-    }
+    if (status == 0){
+        if (answer == questions[runningQuestion].correct) {
+            // answer is correct
+            score++;
+            // change progress color to green
+            answerIsCorrect();
+        } else {
+            // answer is wrong
+            // change progress color to red
+            answerIsWrong();
+        }
+        count = 0;
+        if (runningQuestion < lastQuestion) {
+            runningQuestion++;
+            renderQuestion();
+        } else {
+            // end the quiz and show the score
+            clearInterval(TIMER);
+            scoreRender();
+        }
+    }  
 }
 
 // answer is correct
@@ -200,6 +203,7 @@ function answerIsWrong() {
 
 // score render
 function scoreRender() {
+    status = 1;
     scoreDiv.style.display = "block";
 
     // calculate the amount of question percent answered by the user
