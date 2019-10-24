@@ -1,8 +1,12 @@
 body {
     margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: #417FAF;
+    overflow-x: hidden;
 }
 
-.container {
+.main-container {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,12 +26,11 @@ body {
 }
 
 .sub-container2 {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     min-width: 300px;
     position: relative;
-    left: 0;
-    top: 0;
+    margin: 2%
 }
 
 .item1 {
@@ -83,4 +86,34 @@ p.text2 {
 
 .bg {
     background: #417FAF;
+}
+
+.s1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3px solid #417FAF;
+    background-color: #fff;
+    color: #417FAF;
+    font-family: 'Kanit', sans-serif;
+    width: 220px;
+    height: 220px;
+    font-size: 65px;
+}
+
+.b1 {
+    border-radius: 25px;
+    border: 2px solid #417FAF;
+    background-color: #fff;
+    color: #417FAF;
+    font-family: 'Kanit', sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
