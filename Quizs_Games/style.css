@@ -118,7 +118,7 @@ body {
     height: 1.6vmin;
     border-radius: 10px;
     background-color: mediumseagreen;
-    margin-top: -15px;
+    margin-top: -10px;
     margin-left: 25px;
 }
 
@@ -238,6 +238,13 @@ body {
         right: 20px;
         padding: 5px;
         text-align: right;
+    }
+    #timeGauge {
+        height: 1.6vmin;
+        border-radius: 10px;
+        background-color: mediumseagreen;
+        margin-top: -15px;
+        margin-left: 25px;
     }
     #scoreContainer {
         margin: 20px auto;
