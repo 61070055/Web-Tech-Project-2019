@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <title></title>
 </head>
 
@@ -15,7 +16,7 @@
             <svg width="100%" height="100%" viewBox="0 0 540 540">
                 <image x="60" y="60" xlink:href="./Material/img_decomposition.png" height="370" width="370" />
                 <a href="Page/Decomposition_responsive.html">
-                    <path class="hover" d="M 20,520
+                    <path onmouseover="hover(0)" onmouseout="unhover()" class="hover" d="M 20,520
                      a 500,500 0 0,1 500,-500
                      v 300
                      a 220,220 0 0,0 -200,200
@@ -32,7 +33,7 @@
             <svg width="100%" height="100%" viewBox="0 0 540 540">
                 <image x="30" y="70" xlink:href="./Material/Pattern_menu.png" height="430" width="430" />
                 <a href="Page/Pattern_responsive.html">
-                    <path class="hover" d="M 520,520
+                    <path onmouseover="hover(1)" onmouseout="unhover()" class="hover" d="M 520,520
                     a 500,500 0 0,0 -500,-500
                     v 300
                     a 220,220 0 0,1 200,200
@@ -49,7 +50,7 @@
             <svg width="100%" height="100%" viewBox="0 0 540 540">
                 <image x="-130" y="-170" xlink:href="./Material/temp.png" height="840" width="840" />
                 <a href="Page/Abstraction_responsive.html">
-                    <path class="hover" d="M 20,20
+                    <path onmouseover="hover(2)" onmouseout="unhover()" class="hover" d="M 20,20
                         a 500,500 0 0,0 500,500
                         v -300
                         a 220,220 0 0,1 -200,-200
@@ -67,7 +68,7 @@
             <svg width="100%" height="100%" viewBox="0 0 540 540">
                 <image x="40" y="41" xlink:href="./Material/algorithm.png" height="470" width="470" />
                 <a href="Page/Algorithm_responsive.html">
-                    <path class="hover" d="M 520,20
+                    <path onmouseover="hover(3)" onmouseout="unhover()" class="hover" d="M 520,20
                         a 500,500 0 0,1 -500,500
                         v -300
                         a 220,220 0 0,0 200,-200
@@ -85,13 +86,47 @@
             <svg width="100%" height="100%" viewBox="0 0 100 100">
                 <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" />
             </svg>
+            <h2 id="circle" class="center2 text" state="0">CTS</h2>
         </div>
     </div>
     <script type="text/javascript">
-        let main = document.getElementById("main")
-        main.addEventListener("mouseover", (e) => {
+        let circle = document.getElementById("circle")
+        let arcs = document.getElementsByClassName("hover")
 
-        });
+        function hover(item) {
+            for (let i = 0; i < arcs.length; i++) {
+                if (i == item) {
+                    switch (item) {
+                        case 0:
+                            circle.innerHTML = "Decomposition"
+                            break;
+                        case 1:
+                            circle.innerHTML = "Pattern"
+                            break;
+                        case 2:
+                            circle.innerHTML = "Abstraction"
+                            break;
+                        case 3:
+                            circle.innerHTML = "Algorithm"
+                    }
+                    circle.style.fontSize = "2.1vw"
+                    circle.style.top = "40%"
+                    continue
+                }
+                arcs[i].style.opacity = 0.85;
+                arcs[i].style.fill = "#214d70"
+            }
+        }
+
+        function unhover() {
+            for (let i = 0; i < arcs.length; i++) {
+                arcs[i].style.opacity = 0;
+                arcs[i].fill = "#417FAF"
+            }
+            circle.innerHTML = "CTS"
+            circle.style.fontSize = "4vw"
+            circle.style.top = "30%"
+        }
     </script>
 </body>
 

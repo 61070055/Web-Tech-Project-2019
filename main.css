@@ -10,10 +10,12 @@ body {
     opacity: 0;
 }
 
+
+/* 
 .hover:hover {
     fill: #214d70;
     opacity: 0.6;
-}
+} */
 
 #mainCircle {
     transition: 0.5s;
@@ -69,4 +71,27 @@ body {
 [circle="4"] {
     --t: 50%;
     --l: 50%
+}
+
+.center2[state="1"] {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center2[state="0"] {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-size: 4vw;
+    color: #417FAF
+}
+
+body {
+    font-family: 'Anton', sans-serif;
 }
