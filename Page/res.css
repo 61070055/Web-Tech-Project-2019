@@ -117,3 +117,17 @@ p.text2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+nav {
+    background: #ECBE62;
+    width: 90%;
+    margin: auto;
+}
+
+.white {
+    color: white;
+}
+
+.in_bar {
+    height: 5vh;
+}
