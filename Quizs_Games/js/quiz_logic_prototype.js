@@ -14,7 +14,7 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 var status = 0;
 var ft = 0;
-var delay = 3000;
+var delay = 4000;
 
 // create our questions
 let questions = [{
@@ -107,7 +107,7 @@ let questions = [{
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 5; // 60s
+const questionTime = 10; // 60s
 const gaugeWidth = 20; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
@@ -116,7 +116,6 @@ let score = 0;
 // render a question
 function renderQuestion() {
     let q = questions[runningQuestion];
-    if (ft == 0){
         question.innerHTML = "<p>" + q.question + "</p>";
         qImg.innerHTML = "<img src=" + q.imgSrc + ">";
         choiceA.innerHTML = q.choiceA;
@@ -124,19 +123,6 @@ function renderQuestion() {
         choiceC.innerHTML = q.choiceC;
         choiceD.innerHTML = q.choiceD;
         choiceE.innerHTML = q.choiceE;
-        ft = 1;
-    }else {
-        setTimeout(function() {
-            question.innerHTML = "<p>" + q.question + "</p>";
-            qImg.innerHTML = "<img src=" + q.imgSrc + ">";
-            choiceA.innerHTML = q.choiceA;
-            choiceB.innerHTML = q.choiceB;
-            choiceC.innerHTML = q.choiceC;
-            choiceD.innerHTML = q.choiceD;
-            choiceE.innerHTML = q.choiceE;
-        }, delay);
-    }
-     
 }
 
 start.addEventListener("click", startQuiz);
@@ -178,43 +164,42 @@ function renderCounter() {
                 scoreRender();
             }
         }
-}
-
+    } 
 // checkAnwer
 
 function checkAnswer(answer) {
     if (status == 0){
         if (answer == questions[runningQuestion].correct) {
             if (answer == 'A'){
-                document.getElementById("A").style.backgroundColor = "#8bef80";
-                document.getElementById("B").style.backgroundColor = "#ce3e52";
-                document.getElementById("C").style.backgroundColor = "#ce3e52";
-                document.getElementById("D").style.backgroundColor = "#ce3e52";
-                document.getElementById("E").style.backgroundColor = "#ce3e52";
+                choiceA.style.background = "#8bef80";
+                choiceB.style.background = "#ce3e52";
+                choiceC.style.background = "#ce3e52";
+                choiceD.style.background = "#ce3e52";
+                choiceE.style.background = "#ce3e52";
             }else if (answer == 'B'){
-                document.getElementById("A").style.backgroundColor = "#ce3e52";
-                document.getElementById("B").style.backgroundColor = "#8bef80";
-                document.getElementById("C").style.backgroundColor = "#ce3e52";
-                document.getElementById("D").style.backgroundColor = "#ce3e52";
-                document.getElementById("E").style.backgroundColor = "#ce3e52";
+                choiceA.style.background = "#ce3e52";
+                choiceB.style.background = "#8bef80";
+                choiceC.style.background = "#ce3e52";
+                choiceD.style.background = "#ce3e52";
+                choiceE.style.background = "#ce3e52";
             }else if (answer == 'C'){
-                document.getElementById("A").style.backgroundColor = "#ce3e52";
-                document.getElementById("B").style.backgroundColor = "#ce3e52";
-                document.getElementById("C").style.backgroundColor = "#8bef80";
-                document.getElementById("D").style.backgroundColor = "#ce3e52";
-                document.getElementById("E").style.backgroundColor = "#ce3e52";
+                choiceA.style.background = "#ce3e52";
+                choiceB.style.background = "#ce3e52";
+                choiceC.style.background = "#8bef80";
+                choiceD.style.background = "#ce3e52";
+                choiceE.style.background = "#ce3e52";
             }else if (answer == 'D'){
-                document.getElementById("A").style.backgroundColor = "#ce3e52";
-                document.getElementById("B").style.backgroundColor = "#ce3e52";
-                document.getElementById("C").style.backgroundColor = "#ce3e52";
-                document.getElementById("D").style.backgroundColor = "#8bef80";
-                document.getElementById("E").style.backgroundColor = "#ce3e52";
+                choiceA.style.background = "#ce3e52";
+                choiceB.style.background = "#ce3e52";
+                choiceC.style.background = "#ce3e52";
+                choiceD.style.background = "#8bef80";
+                choiceE.style.background = "#ce3e52";
             }else if (answer == 'E'){
-                document.getElementById("A").style.backgroundColor = "#ce3e52";
-                document.getElementById("B").style.backgroundColor = "#ce3e52";
-                document.getElementById("C").style.backgroundColor = "#ce3e52";
-                document.getElementById("D").style.backgroundColor = "#ce3e52";
-                document.getElementById("E").style.backgroundColor = "#8bef80";
+                choiceA.style.background = "#ce3e52";
+                choiceB.style.background = "#ce3e52";
+                choiceC.style.background = "#ce3e52";
+                choiceD.style.background = "#ce3e52";
+                choiceE.style.background = "#8bef80";
             }
             // answer is correct
             score++;
@@ -222,24 +207,30 @@ function checkAnswer(answer) {
             answerIsCorrect();
         } else {
             if (answer == 'A'){
-                document.getElementById("A").style.backgroundColor = "#ce3e52";
+                choiceA.style.background = "#ce3e52";
             }else if (answer == 'B'){
-                document.getElementById("B").style.backgroundColor = "#ce3e52";
+                choiceB.style.background = "#ce3e52";
             }else if (answer == 'C'){
-                document.getElementById("C").style.backgroundColor = "#ce3e52";
+                choiceC.style.background = "#ce3e52";
             }else if (answer == 'D'){
-                document.getElementById("D").style.backgroundColor = "#ce3e52";
+                choiceD.style.background = "#ce3e52";
             }else if (answer == 'E'){
-                document.getElementById("E").style.backgroundColor = "#ce3e52";
+                choiceE.style.background = "#ce3e52";
             }
             // answer is wrong
             // change progress color to red
             answerIsWrong();
         }
-        count = 0;
         if (runningQuestion < lastQuestion) {
             runningQuestion++;
-            renderQuestion();
+            clearInterval(TIMER);
+            setTimeout(renderQuestion, 10000);
+            setTimeout(function() {
+                TIMER = setInterval(renderCounter, 1000);
+                count = 0;
+                resetcolor();
+            }, 10000);
+            
         } else {
             // end the quiz and show the score
             clearInterval(TIMER);
@@ -282,10 +273,10 @@ function scoreRender() {
     scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;' href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
 }
 
-function reset(){
-    document.getElementById("A").style.backgroundColor = "#ffffff";
-    document.getElementById("B").style.backgroundColor = "#ffffff";
-    document.getElementById("C").style.backgroundColor = "#ffffff";
-    document.getElementById("D").style.backgroundColor = "#ffffff";
-    document.getElementById("E").style.backgroundColor = "#ffffff";
+function resetcolor(){
+    choiceA.style.backgroundColor = "#ffffff";
+    choiceB.style.backgroundColor = "#ffffff";
+    choiceC.style.backgroundColor = "#ffffff";
+    choiceD.style.backgroundColor = "#ffffff";
+    choiceE.style.backgroundColor = "#ffffff";
 }
