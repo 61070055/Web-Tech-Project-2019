@@ -20,8 +20,8 @@
                      a 500,500 0 0,1 500,-500
                      v 300
                      a 220,220 0 0,0 -200,200
-                     z" stroke="white" stroke-width="7" stroke-linecap="round" fill="#417FAF" /></a>
-                <path d="M 20,520
+                     z" fill="#417FAF" /></a>
+                <path class="border" d="M 20,520
                      a 500,500 0 0,1 500,-500
                      v 300
                      a 220,220 0 0,0 -200,200
@@ -37,8 +37,8 @@
                     a 500,500 0 0,0 -500,-500
                     v 300
                     a 220,220 0 0,1 200,200
-                    z" stroke="white" stroke-width="7" stroke-linecap="round" fill="#417FAF" /></a>
-                <path d="M 520,520
+                    z" fill="#417FAF" /></a>
+                <path class="border" d="M 520,520
                     a 500,500 0 0,0 -500,-500
                     v 300
                     a 220,220 0 0,1 200,200
@@ -54,8 +54,8 @@
                         a 500,500 0 0,0 500,500
                         v -300
                         a 220,220 0 0,1 -200,-200
-                        z" stroke="white" stroke-width="7" stroke-linecap="round" fill="#417FAF" />
-                    <path d="M 20,20
+                        z" fill="#417FAF" />
+                    <path class="border" d="M 20,20
                         a 500,500 0 0,0 500,500
                         v -300
                         a 220,220 0 0,1 -200,-200
@@ -72,9 +72,9 @@
                         a 500,500 0 0,1 -500,500
                         v -300
                         a 220,220 0 0,0 200,-200
-                        z" stroke="white" stroke-width="7" stroke-linecap="round" fill="#417FAF" />
+                        z" fill="#417FAF" />
                 </a>
-                <path d="M 520,20
+                <path class="border" d="M 520,20
                         a 500,500 0 0,1 -500,500
                         v -300
                         a 220,220 0 0,0 200,-200
@@ -92,6 +92,7 @@
     <script type="text/javascript">
         let circle = document.getElementById("circle")
         let arcs = document.getElementsByClassName("hover")
+        let borders = document.getElementsByClassName("border")
 
         function hover(item) {
             for (let i = 0; i < arcs.length; i++) {
@@ -115,6 +116,7 @@
                 }
                 arcs[i].style.opacity = 0.85;
                 arcs[i].style.fill = "#214d70"
+                borders[i].style.opacity = 0.15;
             }
         }
 
@@ -122,6 +124,7 @@
             for (let i = 0; i < arcs.length; i++) {
                 arcs[i].style.opacity = 0;
                 arcs[i].fill = "#417FAF"
+                borders[i].style.opacity = 1;
             }
             circle.innerHTML = "CTS"
             circle.style.fontSize = "4vmax"
