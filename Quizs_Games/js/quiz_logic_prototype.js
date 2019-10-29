@@ -102,16 +102,31 @@ let questions = [{
     }
 ];
 
+let choice = [{
+        choices: "A"
+    },{
+        choices: "B"
+    },{
+        choices: "C"
+    },{
+        choices: "D"
+    },{
+        choices: "E"
+    }
+];
+
 // create some variables
 
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
+let runningChoices = 0;
 let count = 0;
 const questionTime = 10; // 60s
 const gaugeWidth = 20; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
+var correct_choice = questions[runningQuestion].correct
 
 // render a question
 function renderQuestion() {
@@ -206,17 +221,14 @@ function checkAnswer(answer) {
             // change progress color to green
             answerIsCorrect();
         } else {
-            if (answer == 'A'){
-                choiceA.style.background = "#ce3e52";
-            }else if (answer == 'B'){
-                choiceB.style.background = "#ce3e52";
-            }else if (answer == 'C'){
-                choiceC.style.background = "#ce3e52";
-            }else if (answer == 'D'){
-                choiceD.style.background = "#ce3e52";
-            }else if (answer == 'E'){
-                choiceE.style.background = "#ce3e52";
-            }
+            var i;
+            for (i = 0; i < 5; i++){
+                if (choice[i].choices == questions[runningQuestion].correct){
+                    document.getElementById(choice[i].choices).style.backgroundColor = "8bef80";
+                } else{
+                    document.getElementById(choice[i].choices).style.backgroundColor = "ce3e52";
+                }
+            };
             // answer is wrong
             // change progress color to red
             answerIsWrong();
@@ -228,7 +240,7 @@ function checkAnswer(answer) {
             setTimeout(function() {
                 TIMER = setInterval(renderCounter, 1000);
                 count = 0;
-                resetcolor();
+                // resetcolor();
             }, 10000);
             
         } else {
