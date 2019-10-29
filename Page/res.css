@@ -33,7 +33,7 @@ body {
     min-width: 300px;
     position: relative;
     margin: 0;
-    padding: 2%
+    padding: 3%
 }
 
 .item1 {
@@ -48,10 +48,23 @@ body {
     padding: 5%
 }
 
+.item3 {
+    width: 50%;
+    position: relative;
+    padding: 5%
+}
+
 .center {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+.centerX {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .text {
