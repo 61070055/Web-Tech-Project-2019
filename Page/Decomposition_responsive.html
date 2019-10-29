@@ -71,7 +71,7 @@
         </div>
         <div class="sub-container1">
             <div class="sub-container2 .center">
-                <form action="" id="assign1" onsubmit="checkAnswer()" method="post">
+                <form action="javascript:void(0);" id="assign1" onsubmit="checkAnswer()" method="post">
                     <p><label for="answer1">How many triangle in picture?<br>Answer :</label>
                         <input class="answer" type="text" name="answer1" id="answer1" maxlength="3"></p>
                     <input type="submit" class="result" name="submit" value="View result">
@@ -95,7 +95,7 @@
     <script>
         function checkAnswer() {
             let answer = document.forms["assign1"]["answer1"].value;
-            let result = document.getElementById("result");
+            // let result = document.getElementById("result");
             if (answer == 9) {
                 // result.innerText = "Correct!"
                 alert("Correct!")
