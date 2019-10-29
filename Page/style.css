@@ -100,7 +100,7 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 3px solid #417FAF;
+    border: 10px solid #ECBE62;
     background-color: #fff;
     color: #417FAF;
     font-family: 'Kanit', sans-serif;
