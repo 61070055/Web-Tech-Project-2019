@@ -18,6 +18,7 @@ body {
 }
 
 .sub-container1 {
+    margin: 0;
     width: 50%;
     display: inline-block;
     min-width: 300px;
@@ -31,7 +32,8 @@ body {
     display: inline-block;
     min-width: 300px;
     position: relative;
-    margin: 2%
+    margin: 0;
+    padding: 2%
 }
 
 .item1 {
