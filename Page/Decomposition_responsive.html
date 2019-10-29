@@ -51,6 +51,7 @@
             <img class="item1 center" src="../Material/decomposition_head.png">
         </div>
     </div>
+
     <div class="main-container bg">
         <div class="sub-container1">
             <img class="item1 center" src="../Material/car.png">
@@ -63,15 +64,50 @@
             </p>
         </div>
     </div>
+    <!-- assign 1 -->
     <div class="main-container">
-            <div class="sub-container2">
-                <img class="s1" src="../Material/Quiz.png"></div>
-            <div class="sub-container2">
-                <a href="../Quizs_Games/logic.html"><button class="b1">QUIZ NOW</button></a>
-            </div>
+        <div class="sub-container1">
+            <img class="item2 center" src="../Material/assign_dec.png">
         </div>
-    <div class="d4">
+        <div class="sub-container1">
+            <div class="sub-container2 .center">
+                <form action="" id="assign1" onsubmit="checkAnswer()" method="post">
+                    <p><label for="answer1">How many triangle in picture?<br>Answer :</label>
+                        <input class="answer" type="text" name="answer1" id="answer1" maxlength="3"></p>
+                    <input type="submit" class="result" name="submit" value="View result">
+                </form>
+            </div>
+            <!-- <div class="sub-container2">
+                <p id="result" class="text" style="text-align: center; opacity: 0;">Correct!</p>
+            </div> -->
+        </div>
     </div>
+
+    <div class="main-container bg">
+    </div>
+    <div class="main-container">
+        <div class="sub-container2">
+            <button class="s1">Quiz</button></div>
+        <div class="sub-container2">
+            <a href="../Quizs_Games/logic.html"><button class="b1">Quiz Now</button></a>
+        </div>
+    </div>
+    <script>
+        function checkAnswer() {
+            let answer = document.forms["assign1"]["answer1"].value;
+            let result = document.getElementById("result");
+            if (answer == 9) {
+                // result.innerText = "Correct!"
+                alert("Correct!")
+                return false;
+            } else {
+                alert("InCorrect!")
+                return false;
+                // result.innerText = "Incorrect!"
+            }
+            // result.style.opacity = 1;
+        }
+    </script>
 </body>
 
-</html>
+</html>.
