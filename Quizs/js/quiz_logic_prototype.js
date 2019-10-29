@@ -138,6 +138,7 @@ function renderQuestion() {
         choiceC.innerHTML = q.choiceC;
         choiceD.innerHTML = q.choiceD;
         choiceE.innerHTML = q.choiceE;
+        status = 0;
 }
 
 start.addEventListener("click", startQuiz);
@@ -220,6 +221,7 @@ function checkAnswer(answer) {
             score++;
             // change progress color to green
             answerIsCorrect();
+            status = 1;
         } else {
             var i;
             for (i = 0; i < 5; i++){
@@ -232,16 +234,17 @@ function checkAnswer(answer) {
             // answer is wrong
             // change progress color to red
             answerIsWrong();
+            status = 1;
         }
         if (runningQuestion < lastQuestion) {
             runningQuestion++;
             clearInterval(TIMER);
-            setTimeout(renderQuestion, 10000);
+            setTimeout(renderQuestion, 3000);
             setTimeout(function() {
                 TIMER = setInterval(renderCounter, 1000);
                 count = 0;
-                // resetcolor();
-            }, 10000);
+            }, 2000);
+            setTimeout(resetcolor, 3000);
             
         } else {
             // end the quiz and show the score
@@ -286,9 +289,9 @@ function scoreRender() {
 }
 
 function resetcolor(){
-    choiceA.style.backgroundColor = "#ffffff";
-    choiceB.style.backgroundColor = "#ffffff";
-    choiceC.style.backgroundColor = "#ffffff";
-    choiceD.style.backgroundColor = "#ffffff";
-    choiceE.style.backgroundColor = "#ffffff";
+    document.getElementById("A").style.backgroundColor = "#ffffff";
+    document.getElementById("B").style.backgroundColor = "#ffffff";
+    document.getElementById("C").style.backgroundColor = "#ffffff";
+    document.getElementById("D").style.backgroundColor = "#ffffff";
+    document.getElementById("E").style.backgroundColor = "#ffffff";
 }

@@ -88,8 +88,8 @@ body {
 .choice:hover {
     border: 2px solid grey;
     font-weight: bold;
-    background: lightseagreen;
-    color: white;
+    background: lightseagreen !important;
+    color: white !important;
     transition: 0.2s;
 }
 
