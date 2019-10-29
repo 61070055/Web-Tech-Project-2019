@@ -10,12 +10,10 @@ body {
     opacity: 0;
 }
 
-
-/* 
-.hover:hover {
+[state="false"] {
     fill: #214d70;
-    opacity: 0.6;
-} */
+    opacity: 0.85;
+}
 
 #mainCircle {
     transition: 0.5s;
