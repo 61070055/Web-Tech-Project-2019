@@ -184,7 +184,7 @@ form {
     margin-top: 10%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
     .nav-res {
         display: inline-block;
     }
