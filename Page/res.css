@@ -133,6 +133,28 @@ p.text2 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.b2 {
+    border-radius: 25px;
+    border: 2px solid #417FAF;
+    background-color: #417FAF;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+}
+#text_img_algorithm{
+    text-align: center;
+    margin: 50px;
+    width: 50%;
+}
+#text_inpage1_algorithm{
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 
 nav {
     background: #ECBE62;
