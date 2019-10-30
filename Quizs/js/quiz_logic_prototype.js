@@ -148,6 +148,8 @@ function startQuiz() {
     start.style.display = "none";
     renderQuestion();
     quiz.style.display = "block";
+    document.getElementById("topic").style.display = "none";
+    document.getElementById("help").style.display = "none";
     renderProgress();
     renderCounter();
     TIMER = setInterval(renderCounter, 1000); // 1000ms = 1s

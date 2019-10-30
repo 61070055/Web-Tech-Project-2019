@@ -27,7 +27,7 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 50%;
+    top: 40%;
     color: #417FAF;
 }
 
@@ -36,6 +36,25 @@ body {
     color: lightseagreen;
     background: rgb(234, 243, 103);
     transition: 0.1s;
+}
+
+#topic {
+    font-size: 7vmin;
+    text-align: center;
+}
+
+#txt_top {
+    margin: 0px;
+    padding-top: 2.5%;
+}
+
+#help {
+    font-size: 3vmin;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: red;
 }
 
 #qImg {
@@ -190,14 +209,16 @@ body {
     top: 45vh;
     left: 11.7vw;
 }
-
+ 
+ /* ipad pro */
 @media only screen and (max-width: 1050px) {
     #question {
-        width: 44vmin;
+        width: 70vmin;
         height: 50vmin;
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     #question p {
         font-size: 22px;
@@ -206,7 +227,7 @@ body {
         width: 63vmin;
         position: absolute;
         right: 0%;
-        top: 40%;
+        top: 52%;
         padding: 10px;
     }
     .choice {
@@ -222,9 +243,10 @@ body {
     #qImg {
         width: 366px;
         height: 356px;
+        transform: translate(-50%, -50%);
         position: absolute;
-        left: 0vw;
-        top: 0vh;
+        left: 50%;
+        top: 15%;
     }
     #qImg img {
         width: 366px;
@@ -291,14 +313,14 @@ body {
         left: 19.5vw;
     }
 }
-
+ /* ipad */
 @media only screen and (max-width: 825px) {
     #question {
-        width: 45vmin;
+        width: 74vmin;
         height: 50vmin;
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 50%;
+        top: 50%;
     }
     #question p {
         font-size: 19px;
@@ -307,7 +329,7 @@ body {
         width: 60vmin;
         position: absolute;
         right: 0%;
-        top: 40%;
+        top: 53%;
         padding: 10px;
     }
     .choice {
@@ -320,15 +342,16 @@ body {
         padding: 5px;
     }
     #qImg {
-        width: 266px;
-        height: 305px;
+        width: 226px;
+        height: 265px;
         position: absolute;
-        left: 0vw;
-        top: 0vh;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 15%;
     }
     #qImg img {
-        width: 266px;
-        height: 305px;
+        width: 226px;
+        height: 265px;
         border-top-left-radius: 5px;
     }
     #timer {
@@ -388,35 +411,36 @@ body {
         left: 18.6vw;
     }
 }
-
+ /* Iphone 6/7/8 plus default phone */
 @media only screen and (max-width: 600px) {
     #question {
-        width: 38vmin;
+        width: 78vmin;
         height: 50vmin;
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 50%;
+        top: 40%;
     }
     #question p {
         font-size: 11px;
     }
     #qImg {
-        width: 180px;
-        height: 191px;
+        width: 140px;
+        height: 151px;
         position: absolute;
-        left: 0vw;
-        top: 0vh;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 12%;
     }
     #qImg img {
-        width: 180px;
-        height: 191px;
+        width: 140px;
+        height: 151px;
         border-top-left-radius: 5px;
     }
     #choices {
         width: 57vmin;
         position: absolute;
         right: 0%;
-        top: 40%;
+        top: 50%;
         padding: 10px;
     }
     .choice {
@@ -495,14 +519,14 @@ body {
     }
 
 }
-
+ /* All Iphone not Iphone 6/7/8 plus Galaxy S5 */
 @media only screen and (max-width: 400px) {
     #question {
-        width: 50vmin;
+        width: 74vmin;
         height: 60vmin;
         position: absolute;
-        right: 0;
-        top: 0;
+        left: 50%;
+        top: 40%;
     }
     #question p {
         font-size: 10px;
@@ -511,7 +535,7 @@ body {
         width: 59vmin;
         position: absolute;
         right: 0%;
-        top: 38%;
+        top: 53%;
         padding: 10px;
     }
     .choice {
@@ -549,11 +573,12 @@ body {
         margin-left: 15px;
     }
     #qImg {
-        width: 30vmin;
-        height: 35vmin;
+        width: 100px;
+        height: 111px;
+        transform: translate(-50%, -50%);
         position: absolute;
-        left: 0vw;
-        top: 0vh;
+        left: 50%;
+        top: 10%;
     }
     #qImg img {
         width: 30vmin;
