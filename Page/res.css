@@ -233,6 +233,14 @@ form {
     text-align: center;
     margin-top: 10%;
 }
+.true_false{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+    
+}
 
 @media (max-width: 767px) {
     .nav-res {

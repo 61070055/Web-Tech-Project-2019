@@ -90,23 +90,31 @@
             <button class="s1">Quiz</button></div>
         <div class="sub-container2">
             <a href="../Quizs/logic.html"><button class="b1">Quiz Now</button></a>
+            <img class="true_false" id="true" src="../Material/true.png" onclick="true_false()">
+            <img class="true_false" id="false" src="../Material/false.png" onclick="true_false()">
         </div>
     </div>
+    
     <script>
         function checkAnswer() {
             let answer = document.forms["assign1"]["answer1"].value;
             // let result = document.getElementById("result");
             if (answer == 9) {
                 // result.innerText = "Correct!"
-                alert("Correct!")
+                document.getElementById("true").style.display = "inline";
                 return false;
             } else {
-                alert("InCorrect!")
+                document.getElementById("false").style.display = "inline";
                 return false;
                 // result.innerText = "Incorrect!"
             }
             // result.style.opacity = 1;
         }
+        function true_false(){
+            document.getElementById("true").style.display = "none";
+            document.getElementById("false").style.display = "none";
+        }
+        
     </script>
 </body>
 
