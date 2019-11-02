@@ -19,7 +19,7 @@ var delay = 4000;
 // create our questions
 let questions = [{
         question: "A เป็นลูกชายของ C ; C กับ Q เป็นพี่สาว/น้องสาวกัน ; Z เป็นแม่ของ Q และ P เป็นบุตรของ Z ข้อใดต่อไปนี้เป็นจริง",
-        imgSrc: "img/test.png",
+        imgSrc: "img/bg.png",
         choiceA: "P เป็นพ่อของ A",
         choiceB: "P เป็นพี่ชาย/น้องชาย ของ C",
         choiceC: "A เป็นลูกชายของ Z",
