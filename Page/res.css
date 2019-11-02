@@ -144,6 +144,19 @@ p.text2 {
     font-size: 20px;
     position: relative;
 }
+.b3 {
+    border-radius: 25px;
+    border: 2px solid #417FAF;
+    background-color: #fff;
+    color: #417FAF;
+    font-family: 'Kanit', sans-serif;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+    margin-top: -300px;
+    margin-left: 100px;
+}
 #text_img_algorithm{
     text-align: center;
     margin: 50px;
