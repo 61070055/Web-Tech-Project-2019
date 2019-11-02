@@ -121,7 +121,7 @@ const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let runningChoices = 0;
 let count = 0;
-const questionTime = 10; // 60s
+const questionTime = 120; // 60s
 const gaugeWidth = 20; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
