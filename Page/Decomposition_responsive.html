@@ -103,7 +103,11 @@
                 // result.innerText = "Correct!"
                 document.getElementById("true").style.display = "inline";
                 return false;
-            } else {
+                }
+            else if(answer == ""){
+                return false;
+            }
+             else {
                 document.getElementById("false").style.display = "inline";
                 return false;
                 // result.innerText = "Incorrect!"
