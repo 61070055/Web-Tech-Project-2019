@@ -43,6 +43,15 @@ body {
     width: 50%;
     height: 50%;
     display: inline-block;
+    transition: 0.5s;
+}
+
+.sub-container2 {
+    width: 50%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .circle {
@@ -69,6 +78,19 @@ body {
 [circle="4"] {
     --t: 50%;
     --l: 50%
+}
+
+.half-circle {
+    position: absolute;
+    left: var(--x);
+}
+
+[half="1"] {
+    --x: 0;
+}
+
+[half="2"] {
+    --x: 50%;
 }
 
 .center2[state="1"] {

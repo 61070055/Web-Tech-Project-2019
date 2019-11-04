@@ -82,9 +82,30 @@
             </svg>
         </div>
 
+        <div class="sub-container2 half-circle" half="1">
+            <svg width="100%" height="100%" viewBox="0 0 540 1080">
+                <path d="M 525,20
+                    a 520,520 0 0,0 0,1040
+                    v -300
+                    a 221,221 0 0,1 0,-440
+                    v-300" stroke="white" stroke-width="7" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
+        <div class="sub-container2 half-circle" half="2">
+            <svg width="100%" height="100%" viewBox="0 0 540 1080">
+                <path d="M 15,20
+                        a 520,520 0 0,1 0,1040
+                        v -300
+                        a 221,221 0 0,0 0,-440
+                        v-300" stroke="white" stroke-width="7" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
         <div class="center" style="width:33%;height:33%">
             <svg width="100%" height="100%" viewBox="0 0 100 100">
-                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" />
+                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onmouseover="changeText('Logic')" onmouseout="changeText('CTS')" onclick="changeForm()" />
+                CTS
             </svg>
             <h2 id="circle" class="center2 text" state="0">CTS</h2>
         </div>
@@ -93,6 +114,7 @@
         let circle = document.getElementById("circle")
         let arcs = document.getElementsByClassName("hover")
         let borders = document.getElementsByClassName("border")
+        let status = 0;
 
         function hover(item) {
             for (let i = 0; i < arcs.length; i++) {
@@ -128,6 +150,41 @@
             circle.innerHTML = "CTS"
             circle.style.fontSize = "4vmax"
             circle.style.top = "30%"
+        }
+
+        function changeText(text) {
+            circle.innerText = text;
+        }
+
+        function changeForm() {
+            let sub1 = document.getElementsByClassName("sub-container")
+            let sub2 = document.getElementsByClassName("sub-container2")
+            if (status == 0) {
+                status = 1;
+                for (i of sub1) {
+                    i.style.opacity = 0;
+                    i.style.display = "none";
+                }
+                setTimeout(() => {
+                    for (i of sub2) {
+                        i.style.display = "inline-block";
+                        i.style.opacity = 1;
+                    }
+                }, 300)
+
+            } else {
+                status = 0;
+                for (i of sub2) {
+                    i.style.opacity = 0;
+                    i.style.display = "none";
+                }
+                setTimeout(() => {
+                    for (i of sub1) {
+                        i.style.display = "inline-block";
+                        i.style.opacity = 1;
+                    }
+                }, 300)
+            }
         }
     </script>
 </body>
