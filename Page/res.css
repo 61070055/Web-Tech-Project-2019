@@ -248,8 +248,8 @@ form {
 #txt_abs{
     color:#417FAF; 
     text-align: center;
-    padding-left: 35%;
-    font-size: 45px;
+    padding-left: 20%;
+    font-size: 25px;
 }
 
 @media (max-width: 767px) {
