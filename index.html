@@ -104,14 +104,14 @@
 
         <div class="center" style="width:33%;height:33%">
             <svg width="100%" height="100%" viewBox="0 0 100 100">
-                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onmouseover="changeText('Logic')"
-                    onmouseout="changeText('CTS')" onclick="changeForm()" />
+                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onclick="changeForm()" />
                 CTS
             </svg>
             <h2 id="circle" class="center2 text" state="0">CTS</h2>
         </div>
     </div>
     <script type="text/javascript">
+        let mainCircle = document.getElementById("mainCircle")
         let circle = document.getElementById("circle")
         let arcs = document.getElementsByClassName("hover")
         let borders = document.getElementsByClassName("border")
@@ -158,6 +158,7 @@
         }
 
         function changeForm() {
+
             let sub1 = document.getElementsByClassName("sub-container")
             let sub2 = document.getElementsByClassName("sub-container2")
             if (status == 0) {
@@ -174,7 +175,7 @@
                     i.style.display = "inline-block";
                     i.style.opacity = 1;
                 }
-
+                changeText('Logic')
             } else {
                 status = 0;
                 for (i of sub2) {
@@ -189,9 +190,18 @@
                     i.style.display = "inline-block";
                     i.style.opacity = 1;
                 }
-
+                changeText('CTS')
             }
         }
+
+        mainCircle.addEventListener("mouseover", () => {
+            if (status == 0) changeText('Logic');
+            else changeText('CTS')
+        })
+        mainCircle.addEventListener("mouseout", () => {
+            if (status == 0) changeText('CTS');
+            else changeText('Logic')
+        })
     </script>
 </body>
 
