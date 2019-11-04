@@ -245,6 +245,12 @@ form {
   display: none;
     
 }
+#txt_abs{
+    color:#417FAF; 
+    text-align: center;
+    padding-left: 25%;
+    font-size: 45px;
+}
 
 @media (max-width: 767px) {
     .nav-res {
