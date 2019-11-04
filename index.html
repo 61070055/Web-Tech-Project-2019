@@ -104,7 +104,8 @@
 
         <div class="center" style="width:33%;height:33%">
             <svg width="100%" height="100%" viewBox="0 0 100 100">
-                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onmouseover="changeText('Logic')" onmouseout="changeText('CTS')" onclick="changeForm()" />
+                <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onmouseover="changeText('Logic')"
+                    onmouseout="changeText('CTS')" onclick="changeForm()" />
                 CTS
             </svg>
             <h2 id="circle" class="center2 text" state="0">CTS</h2>
@@ -163,27 +164,32 @@
                 status = 1;
                 for (i of sub1) {
                     i.style.opacity = 0;
-                    i.style.display = "none";
                 }
                 setTimeout(() => {
-                    for (i of sub2) {
-                        i.style.display = "inline-block";
-                        i.style.opacity = 1;
+                    for (i of sub1) {
+                        i.style.display = "none";
                     }
                 }, 300)
+                for (i of sub2) {
+                    i.style.display = "inline-block";
+                    i.style.opacity = 1;
+                }
 
             } else {
                 status = 0;
                 for (i of sub2) {
                     i.style.opacity = 0;
-                    i.style.display = "none";
                 }
                 setTimeout(() => {
-                    for (i of sub1) {
-                        i.style.display = "inline-block";
-                        i.style.opacity = 1;
+                    for (i of sub2) {
+                        i.style.display = "none";
                     }
                 }, 300)
+                for (i of sub1) {
+                    i.style.display = "inline-block";
+                    i.style.opacity = 1;
+                }
+
             }
         }
     </script>

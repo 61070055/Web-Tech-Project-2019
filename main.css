@@ -43,7 +43,7 @@ body {
     width: 50%;
     height: 50%;
     display: inline-block;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .sub-container2 {
