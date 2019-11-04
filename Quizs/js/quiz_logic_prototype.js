@@ -20,6 +20,7 @@ var delay = 4000;
 let questions = [{
         question: "A เป็นลูกชายของ C ; C กับ Q เป็นพี่สาว/น้องสาวกัน ; Z เป็นแม่ของ Q และ P เป็นบุตรของ Z ข้อใดต่อไปนี้เป็นจริง",
         imgSrc: "img/bg.png",
+        checkImg: "0",
         choiceA: "P เป็นพ่อของ A",
         choiceB: "P เป็นพี่ชาย/น้องชาย ของ C",
         choiceC: "A เป็นลูกชายของ Z",
@@ -30,6 +31,7 @@ let questions = [{
     {
         question: "ให้ดู pattern ดังต่อไปนี้และ เลขคู่ใดดังต่อไปนี้คือเลขถัดไป ? <br> <b>7 9 66 12 14 66 17</b>",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "19 66",
         choiceB: "66 19",
         choiceC: "19 22",
@@ -39,6 +41,7 @@ let questions = [{
     }, {
         question: "1, 2, 6, 24, ?, 720",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "100",
         choiceB: "104",
         choiceC: "108",
@@ -48,6 +51,7 @@ let questions = [{
     }, {
         question: "5760, 960, ?, 48, 16, 8",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "120",
         choiceB: "160",
         choiceC: "192",
@@ -57,6 +61,7 @@ let questions = [{
     }, {
         question: "16, 24, 48, 120, 360, 1260, ?",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "3780",
         choiceB: "4725",
         choiceC: "5355",
@@ -66,6 +71,7 @@ let questions = [{
     }, {
         question: "(7*7)^3 ÷ (49*7)^3 * (2401)^2 = 7x",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "5",
         choiceB: "6",
         choiceC: "4",
@@ -75,6 +81,7 @@ let questions = [{
     }, {
         question: "23% of 1840 + 24% of 1260 = ?",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "733",
         choiceB: "724",
         choiceC: "725.6",
@@ -84,6 +91,7 @@ let questions = [{
     }, {
         question: "(9.96)^3 – (25.9)^2 + (2.9)^5 = ?",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "80",
         choiceB: "88",
         choiceC: "81",
@@ -93,6 +101,7 @@ let questions = [{
     }, {
         question: "จงเรียงคำที่ให้ไว้ด้านล่างตามลำดับที่มีความหมาย <br> 1.Leaves <br> 2.Branch <br> 3.Flower <br> 4.Tree <br> 5.Fruit",
         imgSrc: "img/test.png",
+        checkImg: "0",
         choiceA: "4,3,1,2,5",
         choiceB: "4,3,2,1,5",
         choiceC: "4,2,5,3,1",
@@ -133,11 +142,19 @@ function renderQuestion() {
     let q = questions[runningQuestion];
         question.innerHTML = "<p>" + q.question + "</p>";
         qImg.innerHTML = "<img src=" + q.imgSrc + ">";
-        choiceA.innerHTML = q.choiceA;
-        choiceB.innerHTML = q.choiceB;
-        choiceC.innerHTML = q.choiceC;
-        choiceD.innerHTML = q.choiceD;
-        choiceE.innerHTML = q.choiceE;
+        if (questions[runningQuestion].checkImg == "0"){
+            choiceA.innerHTML = q.choiceA;
+            choiceB.innerHTML = q.choiceB;
+            choiceC.innerHTML = q.choiceC;
+            choiceD.innerHTML = q.choiceD;
+            choiceE.innerHTML = q.choiceE;
+        } else if (questions[runningQuestion].checkImg == "1"){
+            choiceA.innerHTML = "<img id='mA' src=" + q.choiceA + ">";
+            choiceB.innerHTML = "<img id='mB' src=" + q.choiceB + ">";
+            choiceC.innerHTML = "<img id='mC' src=" + q.choiceC + ">";
+            choiceD.innerHTML = "<img id='mD' src=" + q.choiceD + ">";
+            choiceE.innerHTML = "<img id='mE' src=" + q.choiceE + ">";
+        }
         status = 0;
 }
 
@@ -241,12 +258,12 @@ function checkAnswer(answer) {
         if (runningQuestion < lastQuestion) {
             runningQuestion++;
             clearInterval(TIMER);
-            setTimeout(renderQuestion, 3000);
+            setTimeout(renderQuestion, 2000);
             setTimeout(function() {
                 TIMER = setInterval(renderCounter, 1000);
                 count = 0;
-            }, 2000);
-            setTimeout(resetcolor, 3000);
+            }, 1000);
+            setTimeout(resetcolor, 2000);
             
         } else {
             // end the quiz and show the score

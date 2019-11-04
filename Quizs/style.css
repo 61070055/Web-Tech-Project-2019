@@ -65,6 +65,31 @@ body {
     top: 0vh;
 }
 
+#mA {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+#mB {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+#mC {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+#mD {
+    width: 5vmin;
+    height: 5vmin;
+}
+
+#mE {
+    width: 5vmin;
+    height: 5vmin;
+}
+
 #qImg img {
     width: 300px;
     height: 299px;
