@@ -192,7 +192,12 @@ p.text2 {
 }
 th,td{
     border: 1px solid black;
-    border-collapse: collapse;
+    border-collapse: collapse;  
+
+}
+.table-pic{
+    width: 10px;
+    height: 10px;
 
 }
 
