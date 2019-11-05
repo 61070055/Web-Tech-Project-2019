@@ -18,96 +18,96 @@ var delay = 4000;
 
 // create our questions
 let questions = [{
-        question: "A เป็นลูกชายของ C ; C กับ Q เป็นพี่สาว/น้องสาวกัน ; Z เป็นแม่ของ Q และ P เป็นบุตรของ Z ข้อใดต่อไปนี้เป็นจริง",
+        question: "อะไรคือความหมายของ Computational Thinking ?",
         imgSrc: "img/bg.png",
         checkImg: "0",
-        choiceA: "P เป็นพ่อของ A",
-        choiceB: "P เป็นพี่ชาย/น้องชาย ของ C",
-        choiceC: "A เป็นลูกชายของ Z",
-        choiceD: "Q เป็นพี่สาว/น้องสาวของ A",
-        choiceE: "ไม่มีคำตอบที่ถูก",
-        correct: "B"
-    },
-    {
-        question: "ให้ดู pattern ดังต่อไปนี้และ เลขคู่ใดดังต่อไปนี้คือเลขถัดไป ? <br> <b>7 9 66 12 14 66 17</b>",
-        imgSrc: "img/test.png",
-        checkImg: "0",
-        choiceA: "19 66",
-        choiceB: "66 19",
-        choiceC: "19 22",
-        choiceD: "20 66",
-        choiceE: "66 20",
+        choiceA: "บอกวิธีการใช้ให้กับคอมพิวเตอร์",
+        choiceB: "คิดให้เหมือนคอมพิวเตอร์ ในเลขฐานสอง",
+        choiceC: "ใช้เทคนิคและวิธีการเพื่อช่วยในการแก้ปัญหา",
+        choiceD: "ใช้เพื่อเกิดความเข้าใจให้เหมือนกับคอมพิวเตอร์",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
         correct: "A"
     }, {
-        question: "1, 2, 6, 24, ?, 720",
+        question: "ปัญหาซับซ้อนคืออะไร",
         imgSrc: "img/test.png",
         checkImg: "0",
-        choiceA: "100",
-        choiceB: "104",
-        choiceC: "108",
-        choiceD: "120",
-        choiceE: "134",
+        choiceA: "เป็นปัญหาที่ยากจะแก้ไข",
+        choiceB: "เป็นปัญหาที่ยากจะเข้าใจ",
+        choiceC: "เป็นปัญหาที่ยากเกินไปที่จะทำได้",
+        choiceD: "เป็นปัญหาที่ยากจะแก้ไขและยากที่จะเข้าใจ",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
         correct: "D"
     }, {
-        question: "5760, 960, ?, 48, 16, 8",
+        question: "อะไรคือความหมายของ Pattern Recognition ?",
         imgSrc: "img/test.png",
         checkImg: "0",
-        choiceA: "120",
-        choiceB: "160",
-        choiceC: "192",
-        choiceD: "240",
-        choiceE: "274",
+        choiceA: "การทำแบบทีละขั้นตอนเพื่อแก้ไขปัญหา",
+        choiceB: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
+        choiceC: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
+        choiceD: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
+        correct: "B"
+    }, {
+        question: "ข้อใดต่อไปนี้เป็นตัวอย่างของ Computational Thinking",
+        imgSrc: "img/test.png",
+        checkImg: "0",
+        choiceA: "เมื่อจะไปพบเพื่อนจะต้องเดินไปรอบๆ จนกว่าจะเจอพวกเขา",
+        choiceB: "เมื่อจะไปพบเพื่อน จึงถามความคิดเห็นของผู้ปกครองเพื่อที่จะวางแผนไปพบพวกเขา",
+        choiceC: "วางแผนเส้นทางของคุณเพื่อที่จะไปพบเพื่อน",
+        choiceD: "ข้อ B และ ข้อ C ถูกต้อง",
+        choiceE: "ข้อ A และ ข้อ B ถูกต้อง",
         correct: "C"
     }, {
-        question: "16, 24, 48, 120, 360, 1260, ?",
+        question: "อะไรคือความหมายของ Decomposition ?",
         imgSrc: "img/test.png",
         checkImg: "0",
-        choiceA: "3780",
-        choiceB: "4725",
-        choiceC: "5355",
-        choiceD: "5252",
-        choiceE: "5040",
-        correct: "E"
+        choiceA: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
+        choiceB: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
+        choiceC: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
+        choiceD: "การทำแบบทีละขั้นตอนเพื่อแก้ไขปัญหา",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
+        correct: "B"
     }, {
-        question: "(7*7)^3 ÷ (49*7)^3 * (2401)^2 = 7x",
+        question: "Computational Thinking มี 3 เสาหลัก ยกเว้นข้อใด",
         imgSrc: "img/test.png",
         checkImg: "0",
-        choiceA: "5",
-        choiceB: "6",
-        choiceC: "4",
-        choiceD: "8",
-        choiceE: "3",
+        choiceA: "Abstraction",
+        choiceB: "Automation",
+        choiceC: "Coding",
+        choiceD: "Analysis",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
+        correct: "C"
+    }, {
+        question: "ข้อใดคือความหมายของ Algorithm ?",
+        imgSrc: "img/test.png",
+        checkImg: "0",
+        choiceA: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
+        choiceB: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
+        choiceC: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
+        choiceD: "การทำแบบทีละขั้นตอนเพื่อแก้ไขปัญหา",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
+        correct: "D"
+    },
+    {
+        question: "เทคนิคของใดของ Computational Thinking ที่มีวิธีการคิดแบบแบ่งปัญหาออกเป็นส่วนย่อยๆ",
+        imgSrc: "img/test.png",
+        checkImg: "0",
+        choiceA: "Decomposition",
+        choiceB: "Abstraction",
+        choiceC: "Algorithms",
+        choiceD: "Pattern Regonition",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
         correct: "A"
-    }, {
-        question: "23% of 1840 + 24% of 1260 = ?",
+    },{
+        question: "ข้อใดคือความหมายของ Abstraction ?",
         imgSrc: "img/test.png",
         checkImg: "0",
-        choiceA: "733",
-        choiceB: "724",
-        choiceC: "725.6",
-        choiceD: "734.5",
-        choiceE: "736.3",
-        correct: "C"
-    }, {
-        question: "(9.96)^3 – (25.9)^2 + (2.9)^5 = ?",
-        imgSrc: "img/test.png",
-        checkImg: "0",
-        choiceA: "80",
-        choiceB: "88",
-        choiceC: "81",
-        choiceD: "90",
-        choiceE: "97",
-        correct: "C"
-    }, {
-        question: "จงเรียงคำที่ให้ไว้ด้านล่างตามลำดับที่มีความหมาย <br> 1.Leaves <br> 2.Branch <br> 3.Flower <br> 4.Tree <br> 5.Fruit",
-        imgSrc: "img/test.png",
-        checkImg: "0",
-        choiceA: "4,3,1,2,5",
-        choiceB: "4,3,2,1,5",
-        choiceC: "4,2,5,3,1",
-        choiceD: "4,2,3,1,5",
-        choiceE: "4,2,1,3,5",
-        correct: "E"
+        choiceA: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
+        choiceB: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
+        choiceC: "การทำแบบทีละขั้นตอนเพื่อแก้ไขปัญหา",
+        choiceD: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
+        choiceE: "ไม่มีคำตอบที่ถูกต้อง",
+        correct: "B"
     }
 ];
 
@@ -130,7 +130,7 @@ const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let runningChoices = 0;
 let count = 0;
-const questionTime = 120; // 60s
+const questionTime = 60; // 60s
 const gaugeWidth = 20; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
@@ -303,7 +303,7 @@ function scoreRender() {
     // scoreDiv.innerHTML = "<img src="+ img + " " + style_img + ">";
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
-    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;'href='../Page/Decomposition_responsive.html' id='back'>กลับสู่หน้าหลัก</a>";
+    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;'href='../index.html' id='back'>กลับสู่หน้าหลัก</a>";
     scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;' href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
 }
 
