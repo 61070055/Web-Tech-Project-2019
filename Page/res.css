@@ -283,6 +283,14 @@ form {
     padding-left: 20%;
     font-size: 25px;
 }
+.txt_color_while{
+    color: #fff;
+    text-align: center;
+}
+.txt_color_blue{
+    color: #417FAF;
+    text-align: center;
+}
 
 @media (max-width: 767px) {
     .nav-res {
