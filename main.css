@@ -10,6 +10,11 @@ body {
     opacity: 0;
 }
 
+.hover2 {
+    transition: 0.5s;
+    opacity: 0;
+}
+
 [state="false"] {
     fill: #214d70;
     opacity: 0.85;

@@ -84,7 +84,14 @@
 
         <div class="sub-container2 half-circle" half="1">
             <svg width="100%" height="100%" viewBox="0 0 540 1080">
-                <path d="M 525,20
+                <a href="">
+                    <path onmouseover="hover2(0)" onmouseout="unhover2()" class="hover2" state="true" d="M 525,20
+                        a 520,520 0 0,0 0,1040
+                        v -300
+                        a 221,221 0 0,1 0,-440
+                        v-300" stroke="white" fill="417FAF"/>
+                </a>
+                <path class="border2" d="M 525,20
                     a 520,520 0 0,0 0,1040
                     v -300
                     a 221,221 0 0,1 0,-440
@@ -94,7 +101,14 @@
 
         <div class="sub-container2 half-circle" half="2">
             <svg width="100%" height="100%" viewBox="0 0 540 1080">
-                <path d="M 15,20
+                <a href="">
+                        <path onmouseover="hover2(1)" onmouseout="unhover2()" class="hover2" state="true" d="M 15,20
+                        a 520,520 0 0,1 0,1040
+                        v -300
+                        a 221,221 0 0,0 0,-440
+                        v-300" stroke="white"fill="#417FAF" />
+                </a>
+                <path class="border2" d="M 15,20
                         a 520,520 0 0,1 0,1040
                         v -300
                         a 221,221 0 0,0 0,-440
@@ -115,6 +129,8 @@
         let circle = document.getElementById("circle")
         let arcs = document.getElementsByClassName("hover")
         let borders = document.getElementsByClassName("border")
+        let halfs = document.getElementsByClassName("hover2")
+        let halfBorders = document.getElementsByClassName("border2")
         let status = 0;
 
         function hover(item) {
@@ -151,6 +167,23 @@
             circle.innerHTML = "CTS"
             circle.style.fontSize = "4vmax"
             circle.style.top = "30%"
+        }
+
+        function hover2(item) {
+            for (let i = 0; i < halfs.length; i++) {
+                if (i == item) {
+                    continue
+                }
+                halfs[i].setAttribute("state", "false")
+                halfBorders[i].style.opacity = 0;
+            }
+        }
+
+        function unhover2() {
+            for (let i = 0; i < halfs.length; i++) {
+                halfBorders[i].style.opacity = 1;
+                halfs[i].setAttribute("state", "true")
+            }
         }
 
         function changeText(text) {
@@ -193,6 +226,7 @@
                 changeText('CTS')
             }
         }
+
 
         mainCircle.addEventListener("mouseover", () => {
             if (status == 0) changeText('Logic');
