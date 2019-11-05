@@ -314,7 +314,9 @@
       color: #417FAF;
       text-align: center;
   }
-  
+  .img_logic_gate{
+    width: 40%;
+  }
   @media (max-width: 767px) {
       .nav-res {
           display: inline-block;
