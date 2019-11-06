@@ -214,8 +214,9 @@
   }
   
   .table-pic {
-      width: 10px;
-      height: 10px;
+    height:auto;
+    width:150px;
+    position: relative;
   }
   
   nav {
