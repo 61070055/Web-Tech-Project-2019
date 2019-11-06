@@ -113,6 +113,9 @@
   .bg {
       background: #417FAF;
   }
+  .bg_y {
+    background: #ECBE62;
+}
   
   .s1 {
       position: relative;
@@ -315,6 +318,10 @@
       color: #417FAF;
       text-align: center;
   }
+  .txt_color_black {
+    color: #646464;
+    text-align: center;
+}
   .img_logic_gate{
     width: 40%;
   }
