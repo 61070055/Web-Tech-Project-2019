@@ -350,9 +350,15 @@
   .img_base_num{
     width: 80%;
   }
-  #pseudo_code1:hover #txt_hover1{
+  #txt_hover1{
       display: none;
   }
+  #pseudo_code1:hover #txt_hover1{
+      display: inline;
+  }
+  #pseudo_code1:hover #img_hover1{
+    display: none;
+}
   @media (max-width: 767px) {
       .nav-res {
           display: inline-block;
