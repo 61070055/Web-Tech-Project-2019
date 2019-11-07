@@ -159,7 +159,7 @@
       position: relative;
   }
   
-  .b2_1 {
+ .b2_1 {
       border-radius: 25px;
       border: 2px solid #ECBE62;
       background-color: #ECBE62;
@@ -170,6 +170,28 @@
       font-size: 20px;
       position: relative;
   }
+  .b2_2 {
+    border-radius: 50%;
+    border: 15px solid #ECBE62;
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    position: relative;
+}
+.b2_2:hover{
+    border-radius: 50%;
+    border: 15px solid #ECBE62;
+    background-color:  #ECBE62;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    width: 250px;
+    height: 250px;
+    font-size: 20px;
+    position: relative;
+}
   
   .b3 {
       border-radius: 25px;
@@ -324,6 +346,12 @@
 }
   .img_logic_gate{
     width: 40%;
+  }
+  .img_base_num{
+    width: 80%;
+  }
+  #pseudo_code1:hover #txt_hover1{
+      display: none;
   }
   @media (max-width: 767px) {
       .nav-res {
