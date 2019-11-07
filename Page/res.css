@@ -359,6 +359,34 @@
   #pseudo_code1:hover #img_hover1{
     display: none;
 }
+#txt_hover2{
+    display: none;
+}
+#pseudo_code2:hover #txt_hover2{
+    display: inline;
+}
+#pseudo_code2:hover #img_hover2{
+  display: none;
+}
+#txt_hover3{
+    display: none;
+}
+#pseudo_code3:hover #txt_hover3{
+    display: inline;
+}
+#pseudo_code3:hover #img_hover3{
+  display: none;
+}
+#txt_hover4{
+    display: none;
+}
+#pseudo_code4:hover #txt_hover4{
+    display: inline;
+}
+#pseudo_code4:hover #img_hover4{
+  display: none;
+}
+
   @media (max-width: 767px) {
       .nav-res {
           display: inline-block;
