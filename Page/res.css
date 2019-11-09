@@ -76,7 +76,7 @@
       left: 50%;
       transform: translateX(-50%);
   }
-  
+
   .text {
       padding: 10%;
       margin: 0;
@@ -388,6 +388,32 @@
 }
 #pseudo_code4:hover #img_hover4{
   display: none;
+}
+#board_input{
+    border: 5px solid #417FAF; 
+    width: 80%; 
+    height: 80%;
+    margin-top:10%;
+    border-radius: 25px;
+
+}
+#board_write_1{
+    border: 5px solid #417FAF; 
+    width: 80%; 
+    height: 60%;
+    margin-top:10%;
+    border-radius: 25px;
+}
+#board_write_2{
+    border: 5px solid #417FAF; 
+    background: #417FAF;
+    color: #fff;
+    width: 80%; 
+    height: 25%;
+    margin-top:10%;
+    border-radius: 15px;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
   @media (max-width: 767px) {
