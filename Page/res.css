@@ -415,6 +415,43 @@
     padding-bottom: 5%;
     padding-top: 5%;
 }
+.num_page_yellow_b{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #DBAC50;
+    border:4px solid #417FAF;
+}
+.num_page_yellow_w{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #DBAC50;
+    border:4px solid #fff;
+}
+.num_page_while_b{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #646464;
+    background: #fff;
+    border:4px solid #417FAF;
+}
+
+.num_page_while_w{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: #646464;
+    background: #fff;
+    border:4px solid #fff;
+}
 
   @media (max-width: 767px) {
       .nav-res {
