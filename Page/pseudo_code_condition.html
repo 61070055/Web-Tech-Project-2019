@@ -10,48 +10,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="res.css">
-    <title>pseudo_code_condition</title>
+    <title>Algorithm</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light">
         <a href="#" class="white">Computational Thinking Skill</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="base_num_1.html"><img class="in_bar"
-                            src="../Material/base_num_menu.png"><span class="nav-res white">Logic</span></a>
+                    <a class="nav-link" href="base_num_1.html"><img class="in_bar" src="../Material/base_num_menu.png"><span class="nav-res white">Logic</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logic_1.html"><img class="in_bar" src="../Material/logic_menu.png"><span
-                            class="nav-res white">Logic</span></a>
+                    <a class="nav-link" href="logic_1.html"><img class="in_bar" src="../Material/logic_menu.png"><span class="nav-res white">Logic</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Decomposition_responsive.html"><img class="in_bar"
-                            src="../Material/flow-chart.png"><span class="nav-res white">Decomposition</span></a>
+                    <a class="nav-link" href="Decomposition_responsive.html"><img class="in_bar" src="../Material/flow-chart.png"><span class="nav-res white">Decomposition</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Pattern_responsive.html"><img class="in_bar"
-                            src="../Material/3d.png"><span class="nav-res white">Pattern</span></a>
+                    <a class="nav-link" href="Pattern_responsive.html"><img class="in_bar" src="../Material/3d.png"><span class="nav-res white">Pattern</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Abstraction_responsive.html"><img class="in_bar"
-                            src="../Material/package-cube-box-for-delivery.png"><span
-                            class="nav-res white">Abstraction</span></a>
+                    <a class="nav-link" href="Abstraction_responsive.html"><img class="in_bar" src="../Material/package-cube-box-for-delivery.png"><span class="nav-res white">Abstraction</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Algorithm_responsive.html"><img class="in_bar"
-                            src="../Material/structure.png"><span class="nav-res white">Algorithm</span></a>
+                    <a class="nav-link disabled" href="Algorithm_responsive.html"><img class="in_bar" src="../Material/structure.png"><span class="nav-res white">Algorithm</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="../index.html"><img class="in_bar"
-                            src="../Material/home-icon-silhouette.png"><span class="nav-res white">Home</span></a>
+                    <a class="nav-link" href="../index.html"><img class="in_bar" src="../Material/home-icon-silhouette.png"><span class="nav-res white">Home</span></a>
                 </li>
             </ul>
         </div>
@@ -61,8 +52,9 @@
             <img class="img_logic_gate centerX" src="../Material/flow-chart_pseu.png" style="margin-top:10%; width: 30%;">
             <h1 style="padding-top: 2%;padding-bottom: 2%;" class="text txt_color_black">Condition</h1>
             <p class="text2 txt_color_black" style="padding-bottom: 15%;">
-                เป็นคำสั่งที่จำลองความคิดเป็นลำดับขั้นตอนโดยใช้สัญลักษณ์เป็น ประโยคภาษาอังกฤษ ซึ่งซูโดโค้ดไม่ใช่ภาษาโปรแกรมทางคอมพิวเตอร์จึงไม่ สามารถนำไปประมวลผลได้ คือ ไม่สามารถสั่งให้คอมพิวเตอร์ทำงานตามคำสั่ง แต่เป็นการเขียนจำลองคำสั่งจริงแบบย่อๆ ตามอัลกอริทึมของโปรแกรมระบบ
-                เพื่อนำไปพัฒนาเป็นการเขียนโปรแกรมภาษาคอมพิวเตอร์ได้ รหัสเทียม (Pseudocode) คือ การเขียนโปรแกรมในรูปแบบภาษาอังกฤษที่มีขั้นตอนและรูปแบบแน่นอนกะทัดรัด และมองดูคล้ายภาษาระดับสูงที่ใช้กับเครื่องคอมพิวเตอร์ซึ่งไม่เจาะจงภาษาใดภาษาหนึ่ง
+                Condition หรือ การเปรียบเทียบ คือการเปรียบเทียบระหว่างสิ่งสองสิ่งและรีเทิร์นค่าออกมาเป็นค่าความจริง (Boolean) หรือ True / Flase นั่นเอง<br> IF-ELSE : ใช้ในกรณีมีกํารเปรียบเทียบ 1-2 กรณี<br> IF : เริ่มต้นกํารท ํางํานแบบเงื่อนไข<br> THEN
+                : ถ้ําเงื่อนไขนี้เป็นจริงจะทําตํามคําสั่งที่อยู่ภํายใต้<br> THEN ELSE : ถ้ําเงื่อนไขเป็นเท็จ จะทําตํามคําสั่งที่อยู่ภํายใต้<br> ELSE จนจบเงื่อนไข ปิดด้วย ENDIF<br>Case : ใช้ในกํารเปรียบเทียบกรณีมีเงื่อนไขมํากกว่ําหนึ่งกรณี Case (ตัวแปรที่ใช้เปรียบเทียบ)
+                of
             </p>
         </div>
         <div class="sub-container1">
@@ -70,8 +62,8 @@
             </div>
             <div id="board_write_2" style="margin-top: 5%;">
                 <p class="text2 txt_color_black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, nostrum eligendi quidem, corrupti minima illum quasi iure fuga dolores ipsa eaque ab animi reprehenderit culpa tenetur. Nostrum porro dignissimos doloremque!</p>
-                </div>
-            
+            </div>
+
         </div>
     </div>
     <div class="main-container bg" style="margin-top: 5%;">
