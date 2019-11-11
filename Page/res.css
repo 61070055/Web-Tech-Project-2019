@@ -176,9 +176,9 @@
     background-color: #fff;
     color: #fff;
     font-family: 'Kanit', sans-serif;
-    width: 250px;
-    height: 250px;
-    font-size: 5vmin;
+    width: 35vmin;
+    height: 35vmin;
+    font-size: 4vmin;
     position: relative;
 
 }
@@ -188,9 +188,6 @@
     background-color:  #ECBE62;
     color: #fff;
     font-family: 'Kanit', sans-serif;
-    width: 250px;
-    height: 250px;
-    font-size: 10vmin;
     position: relative;
     transition-duration: .3s;
     transition-property: all;
