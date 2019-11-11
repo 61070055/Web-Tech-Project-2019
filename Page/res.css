@@ -178,10 +178,9 @@
     font-family: 'Kanit', sans-serif;
     width: 250px;
     height: 250px;
-    font-size: 20px;
+    font-size: 5vmin;
     position: relative;
-    transition-duration: .3s;
-    transition-property: all;
+
 }
 .b2_2:hover{
     border-radius: 50%;
@@ -191,8 +190,10 @@
     font-family: 'Kanit', sans-serif;
     width: 250px;
     height: 250px;
-    font-size: 20px;
+    font-size: 10vmin;
     position: relative;
+    transition-duration: .3s;
+    transition-property: all;
 }
   
   .b3 {
