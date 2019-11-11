@@ -63,6 +63,10 @@
       position: relative;
       padding: 5%
   }
+  .item4 {
+    width: 70%;
+    position: relative;
+}
   
   .center {
       position: relative;
