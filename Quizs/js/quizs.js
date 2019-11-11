@@ -19,7 +19,7 @@ var delay = 4000;
 // create our questions
 let questions = [{
         question: "อะไรคือความหมายของ Computational Thinking ?",
-        imgSrc: "img/bg.png",
+        imgSrc: "https://cdn.dribbble.com/users/720555/screenshots/3974885/bumblebee.gif",
         checkImg: "0",
         choiceA: "บอกวิธีการใช้ให้กับคอมพิวเตอร์",
         choiceB: "คิดให้เหมือนคอมพิวเตอร์ ในเลขฐานสอง",
@@ -29,7 +29,7 @@ let questions = [{
         correct: "A"
     }, {
         question: "ปัญหาซับซ้อนคืออะไร",
-        imgSrc: "img/test.png",
+        imgSrc: "https://cdn.dribbble.com/users/1195051/screenshots/5027342/osquay_dribbble_01.gif",
         checkImg: "0",
         choiceA: "เป็นปัญหาที่ยากจะแก้ไข",
         choiceB: "เป็นปัญหาที่ยากจะเข้าใจ",
@@ -39,7 +39,7 @@ let questions = [{
         correct: "D"
     }, {
         question: "อะไรคือความหมายของ Pattern Recognition ?",
-        imgSrc: "img/test.png",
+        imgSrc: "https://theultralinx.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTMyNjI4MDgwODc4NTM2NzE0/questionmark-dribbblegif.webp",
         checkImg: "0",
         choiceA: "การทำแบบทีละขั้นตอนเพื่อแก้ไขปัญหา",
         choiceB: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
@@ -49,7 +49,7 @@ let questions = [{
         correct: "B"
     }, {
         question: "ข้อใดต่อไปนี้เป็นตัวอย่างของ Computational Thinking",
-        imgSrc: "img/test.png",
+        imgSrc: "https://theultralinx.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTMyNjI4MDgwODc4NDcxMTc4/dribbble_problem-solvedgif.webp",
         checkImg: "0",
         choiceA: "เมื่อจะไปพบเพื่อนจะต้องเดินไปรอบๆ จนกว่าจะเจอพวกเขา",
         choiceB: "เมื่อจะไปพบเพื่อน จึงถามความคิดเห็นของผู้ปกครองเพื่อที่จะวางแผนไปพบพวกเขา",
@@ -59,7 +59,7 @@ let questions = [{
         correct: "C"
     }, {
         question: "อะไรคือความหมายของ Decomposition ?",
-        imgSrc: "img/test.png",
+        imgSrc: "https://theultralinx.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_400/MTMyNjI4MDgwODc4NjAyMjUw/watch-out____dribbble_sgif.webp",
         checkImg: "0",
         choiceA: "มองหาความคล้ายคลึงกันของปัญหาและสามารถลดเวลาในการแก้ปัญหาได้",
         choiceB: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
@@ -69,7 +69,7 @@ let questions = [{
         correct: "B"
     }, {
         question: "Computational Thinking มี 3 เสาหลัก ยกเว้นข้อใด",
-        imgSrc: "img/test.png",
+        imgSrc: "https://cdn.dribbble.com/users/825103/screenshots/2691903/bulb-animated.gif",
         checkImg: "0",
         choiceA: "Abstraction",
         choiceB: "Automation",
@@ -79,7 +79,7 @@ let questions = [{
         correct: "C"
     }, {
         question: "ข้อใดคือความหมายของ Algorithm ?",
-        imgSrc: "img/test.png",
+        imgSrc: "https://cdn.dribbble.com/users/31826/screenshots/3271059/question-by-toondra-studio.gif",
         checkImg: "0",
         choiceA: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
         choiceB: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
@@ -90,7 +90,7 @@ let questions = [{
     },
     {
         question: "เทคนิคของใดของ Computational Thinking ที่มีวิธีการคิดแบบแบ่งปัญหาออกเป็นส่วนย่อยๆ",
-        imgSrc: "img/test.png",
+        imgSrc: "https://cdn.dribbble.com/users/729829/screenshots/1973412/animation.gif",
         checkImg: "0",
         choiceA: "Decomposition",
         choiceB: "Abstraction",
@@ -100,7 +100,7 @@ let questions = [{
         correct: "A"
     },{
         question: "ข้อใดคือความหมายของ Abstraction ?",
-        imgSrc: "img/test.png",
+        imgSrc: "https://cdn.dribbble.com/users/187497/screenshots/1612072/brain-dribs.gif",
         checkImg: "0",
         choiceA: "การแบ่งระบบออกเป็นส่วนย่อยๆ ซึ่งง่ายต่อการเข้าใจโปรแกรม",
         choiceB: "มองแค่ส่วนที่จำเป็นของปัญหาและนำมาวิเคราะห์แก้ไข",
@@ -304,7 +304,7 @@ function scoreRender() {
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
     scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;'href='../index.html' id='back'>กลับสู่หน้าหลัก</a>";
-    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;' href='result/logic_result.html' id='result'>เฉลยคำตอบ</a>";
+    scoreDiv.innerHTML += "<a style='text-decoration:none; color:black;' href='quizs.html' id='result'>เล่นใหม่อีกครั้ง</a>";
 }
 
 function resetcolor(){

@@ -204,7 +204,7 @@ body {
     width: 100px;
     height: 100px;
     top: 13vh;
-    left: 12vw;
+    left: 11vw;
 }
 
 #scoreContainer p {
@@ -232,7 +232,7 @@ body {
     text-align: center;
     font-weight: bold;
     top: 45vh;
-    left: 11.7vw;
+    left: 11vw;
 }
  
  /* ipad pro */
@@ -310,7 +310,7 @@ body {
         width: 150;
         height: 150;
         top: 13vh;
-        left: 19vw;
+        left: 18vw;
     }
     #scoreContainer p {
         position: absolute;
@@ -335,7 +335,7 @@ body {
         text-align: center;
         font-weight: bold;
         top: 45vh;
-        left: 19.5vw;
+        left: 18vw;
     }
 }
  /* ipad */
@@ -354,7 +354,7 @@ body {
         width: 60vmin;
         position: absolute;
         right: 0%;
-        top: 53%;
+        top: 50%;
         padding: 10px;
     }
     .choice {
@@ -401,7 +401,7 @@ body {
         width: 85px;
         height: 85px;
         top: 16vh;
-        left: 20vw;
+        left: 18.5vw;
     }
     #scoreContainer p {
         position: absolute;
@@ -433,7 +433,7 @@ body {
         text-align: center;
         font-weight: bold;
         top: 45vh;
-        left: 18.6vw;
+        left: 17vw;
     }
 }
  /* Iphone 6/7/8 plus default phone */
@@ -524,7 +524,7 @@ body {
         width: 50px;
         height: 50px;
         top: 19vh;
-        left: 20.5vw;
+        left: 19.5vw;
     }
     #back {
         position: absolute;
@@ -540,7 +540,7 @@ body {
         text-align: center;
         font-weight: bold;
         top: 45vh;
-        left: 19.5vw;
+        left: 18.5vw;
     }
 
 }
@@ -551,7 +551,7 @@ body {
         height: 60vmin;
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 41%;
     }
     #question p {
         font-size: 10px;
@@ -560,7 +560,7 @@ body {
         width: 59vmin;
         position: absolute;
         right: 0%;
-        top: 53%;
+        top: 38%;
         padding: 10px;
     }
     .choice {
@@ -603,7 +603,7 @@ body {
         transform: translate(-50%, -50%);
         position: absolute;
         left: 50%;
-        top: 10%;
+        top: 12%;
     }
     #qImg img {
         width: 30vmin;
@@ -621,7 +621,7 @@ body {
         position: absolute;
         display: block;
         top: 25vh;
-        left: 21vw;
+        left: 22vw;
         font-size: 4vmin;
         font-weight: bold;
         text-align: center;
@@ -640,6 +640,6 @@ body {
         text-align: center;
         font-weight: bold;
         top: 43vh;
-        left: 17.4vw;
+        left: 16.3vw;
     }
 }
