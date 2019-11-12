@@ -248,6 +248,7 @@
     position: relative;
   }
   
+    /* navbar start */
   nav {
       background: #ECBE62;
       width: 90%;
@@ -280,6 +281,7 @@
       display: inline;
   }
   
+  /* navbar end */
   .answer {
       background-color: transparent;
       border: 0px solid;

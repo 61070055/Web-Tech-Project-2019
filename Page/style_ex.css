@@ -1,0 +1,31 @@
+nav {
+    background: #ECBE62;
+    width: 90%;
+    margin: auto;
+}
+
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.in_bar {
+    height: 5vh;
+}
+
+.nav-item:hover {
+    background: #DBAC50;
+}
+
+.nav-res {
+    display: none;
+    padding-left: 5%
+}
+
+label {
+    display: inline;
+}
