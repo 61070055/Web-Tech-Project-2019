@@ -10,12 +10,14 @@ html, body {
 
 nav {
     background: #ECBE62;
-    width: 90%;
+    width: 100%;
+    /* height: 15vmin; */
     margin: auto;
 }
 
 .white {
     color: white;
+    /* font-size: 2vmin; */
 }
 
 .white:hover {
@@ -35,6 +37,14 @@ nav {
     display: none;
     padding-left: 5%
 }
+
+/* .navbar-toggler {
+    height: 5vh;
+}
+
+.navbar-toggler-icon {
+    height: 2.5vh;
+} */
 
 label {
     display: inline;
@@ -73,4 +83,11 @@ label {
     right: 20vmin;
     padding: 1vmin;
     text-align: right;
+}
+
+.middle {
+    margin-top: 10vmin;
+    width: 80%;
+    height:60%;
+    background: black;
 }
