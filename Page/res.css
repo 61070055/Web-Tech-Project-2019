@@ -339,7 +339,34 @@
       transform: translate(-50%, -50%);
       display: none;
   }
-  
+  .true_text {
+    border: 2px solid #417FAF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border-radius: 50px;
+}
+
+.btn_in_let {
+    border-radius: 25px;
+    border: 2px solid #417FAF;
+    background-color: #417FAF;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.btn_false {
+    position: absolute;
+    top: 3%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+}
   #txt_abs {
       color: #417FAF;
       text-align: center;
