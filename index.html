@@ -126,6 +126,66 @@
             <h2 onclick="changeForm()" id="circle" class="center2 text" state="0">CTS</h2>
         </div>
     </div>
+
+    <div id="mouse">
+        <div class="mini-container circle" circle="1">
+            <svg width="100%" height="100%" viewBox="0 0 540 540">
+                <path class="border" d="M 20,520
+                     a 500,500 0 0,1 500,-500
+                     v 300
+                     a 220,220 0 0,0 -200,200
+                     z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+        <div class="mini-container circle" circle="2">
+            <svg width="100%" height="100%" viewBox="0 0 540 540">
+                <path class="border" d="M 520,520
+                    a 500,500 0 0,0 -500,-500
+                    v 300
+                    a 220,220 0 0,1 200,200
+                    z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
+        <div class="mini-container circle" circle="3">
+            <svg width="100%" height="100%" viewBox="0 0 540 540">
+                    <path class="border" d="M 20,20
+                        a 500,500 0 0,0 500,500
+                        v -300
+                        a 220,220 0 0,1 -200,-200
+                        z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
+        <div class="mini-container circle" circle="4">
+            <svg width="100%" height="100%" viewBox="0 0 540 540">
+                <path class="border" d="M 520,20
+                        a 500,500 0 0,1 -500,500
+                        v -300
+                        a 220,220 0 0,0 200,-200
+                        z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+        <div class="mini-container2 half-circle" half="1">
+            <svg width="100%" height="100%" viewBox="0 0 540 1080">
+                <path class="border2" d="M 525,20
+                    a 520,520 0 0,0 0,1040
+                    v -300
+                    a 221,221 0 0,1 0,-440
+                    v-300" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+
+        <div class="mini-container2 half-circle" half="2">
+            <svg width="100%" height="100%" viewBox="0 0 540 1080">
+                <path class="border2" d="M 15,20
+                        a 520,520 0 0,1 0,1040
+                        v -300
+                        a 221,221 0 0,0 0,-440
+                        v-300" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+            </svg>
+        </div>
+    </div>
     <script type="text/javascript">
         let mainCircle = document.getElementById("mainCircle")
         let circle = document.getElementById("circle")
@@ -133,6 +193,7 @@
         let borders = document.getElementsByClassName("border")
         let halfs = document.getElementsByClassName("hover2")
         let halfBorders = document.getElementsByClassName("border2")
+        let mouseElement = document.getElementById("mouse");
         let status = 0;
 
         function hover(item) {
@@ -228,26 +289,41 @@
                 changeText('CTS')
             }
         }
-
-
-        mainCircle.addEventListener("mouseover", () => {
+        mainCircle.addEventListener("mouseover", (e) => {
             if (status == 0) changeText('Logic');
             else changeText('CTS')
+            mainCircle.style.fill = "#214d70";
+            mouseElement.style.display = "inline-block";
+
         })
         mainCircle.addEventListener("mouseout", () => {
             if (status == 0) changeText('CTS');
             else changeText('Logic')
+            mainCircle.style.fill = "white";
+            mouseElement.style.display = "none";
+
         })
         circle.addEventListener("mouseover", () => {
             if (status == 0) changeText('Logic');
             else changeText('CTS')
             mainCircle.style.fill = "#214d70";
+            mouseElement.style.display = "inline-block";
         })
         circle.addEventListener("mouseout", () => {
             if (status == 0) changeText('CTS');
             else changeText('Logic')
             mainCircle.style.fill = "white";
+            mouseElement.style.display = "none";
         })
+        window.onmousemove = (e) => {
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+            setTimeout(() => {
+                mouseElement.style.top = `${mouseY+10}px`
+                mouseElement.style.left = `${mouseX+10}px`
+            }, 1)
+
+        }
     </script>
 </body>
 

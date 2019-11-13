@@ -26,6 +26,11 @@ body {
 
 #mainCircle {
     transition: 0.5s;
+    cursor: pointer;
+}
+
+#circle {
+    cursor: pointer;
 }
 
 #mainCircle:hover {
@@ -61,6 +66,22 @@ body {
     display: none;
     opacity: 0;
     transition: 0.5s;
+}
+
+.mini-container {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    transition: 1s;
+    animation: change 1s infinite alternate linear;
+}
+
+.mini-container2 {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    transition: 0.5s;
+    animation: change-reverse 1s infinite alternate linear;
 }
 
 .circle {
@@ -122,9 +143,16 @@ body {
     transition: 0.3s
 }
 
-body {
-    font-family: 'Anton', sans-serif;
+#mouse {
+    width: 40px;
+    height: 40px;
+    position: absolute;
 }
+
+
+/* body {
+    font-family: 'Anton', sans-serif;
+} */
 
 @keyframes gradientBG {
     0% {
@@ -135,5 +163,23 @@ body {
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@keyframes change {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes change-reverse {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
