@@ -4,7 +4,7 @@ let runner = 0;
 var status = 0;
 
 questions = [{
-    correct: "A"
+    correct: "B"
 }, {
     correct: ""
 }, {
