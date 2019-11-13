@@ -123,7 +123,7 @@
                 <circle id="mainCircle" cx="50" cy="50" r="50" fill="white" onclick="changeForm()" />
                 CTS
             </svg>
-            <h2 id="circle" class="center2 text" state="0">CTS</h2>
+            <h2 onclick="changeForm()" id="circle" class="center2 text" state="0">CTS</h2>
         </div>
     </div>
     <script type="text/javascript">
@@ -237,6 +237,16 @@
         mainCircle.addEventListener("mouseout", () => {
             if (status == 0) changeText('CTS');
             else changeText('Logic')
+        })
+        circle.addEventListener("mouseover", () => {
+            if (status == 0) changeText('Logic');
+            else changeText('CTS')
+            mainCircle.style.fill = "#214d70";
+        })
+        circle.addEventListener("mouseout", () => {
+            if (status == 0) changeText('CTS');
+            else changeText('Logic')
+            mainCircle.style.fill = "white";
         })
     </script>
 </body>
