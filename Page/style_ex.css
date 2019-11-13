@@ -114,12 +114,12 @@ label {
     display: flex;
     /* height: 150px; */
     flex-wrap: wrap;
-    text-align: center;
+    text-align: left;
 }
 
 .choice {
     /* display: inline-block; */
-    /* width: 60vmin; */
+    width: 60vmin;
     height: 8vmin;
     text-align: center;
     /* border: 1px solid black;

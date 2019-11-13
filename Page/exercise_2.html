@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style_ex.css">
+    <title>Exercise</title>
+</head>
+
+<body onload="renderProgress()">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="#" class="white">Computational Thinking Skill</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="base_num_1.html"><img class="in_bar"
+                            src="../Material/base_num_menu.png"><span class="nav-res white">Base num</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logic_1.html"><img class="in_bar" src="../Material/logic_menu.png"><span
+                            class="nav-res white">Logic</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Decomposition_responsive.html"><img class="in_bar"
+                            src="../Material/flow-chart.png"><span class="nav-res white">Decomposition</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pattern_responsive.html"><img class="in_bar"
+                            src="../Material/3d.png"><span class="nav-res white">Pattern</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="Abstraction_responsive.html"><img class="in_bar"
+                            src="../Material/package-cube-box-for-delivery.png"><span
+                            class="nav-res white">Abstraction</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Algorithm_responsive.html"><img class="in_bar"
+                            src="../Material/structure.png"><span class="nav-res white">Algorithm</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"><img class="in_bar"
+                            src="../Material/home-icon-silhouette.png"><span class="nav-res white">Home</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <center> -->
+    <div class="middle" id="middle">
+          <div class="ex_img_box"><img src="../Material/phone.png" class="ex_img"></div>
+          <div><p style="font-size: 20px;"> 2.) จอร์นได้ส่งข้อความลับด้วยการเข้ารหัส แต่รหัสได้หลุดออกมา คือ <b>"QENTBAVPN"</b> ซึ่งคีย์ในการถอดรหัสดังรูป</p></div>
+          <div id="choices" class="choices">
+                <div id="A" class="choice" onclick="checkAnswer('A')"><p style="color: black;font-size: 2.5vmin;">A.) DANCING</p></div>
+                <div id="B" class="choice" onclick="checkAnswer('B')"><p style="color: black;font-size: 2.5vmin;">B.) DRAGOONY</p></div>
+                <div id="C" class="choice" onclick="checkAnswer('C')"><p style="color: black;font-size: 2.5vmin;">C.) DRAGONICA</p></div>
+                <div id="D" class="choice" onclick="checkAnswer('D')"><p style="color: black;font-size: 2.5vmin;">D.) DAZZLING</p></div>
+          </div>
+         
+    </div>
+
+    <div class="true_false" id="true">
+            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+            <img class="centerX" src="../Material/true_text.png"><br>
+            <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
+            <a href="exercise_2.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
+            <!-- <img class="btn_false" src="../Material/false_text.png" onclick="true_false()"> -->
+        </div>
+        <div class="true_false" id="false">
+            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+            <img class="centerX" src="../Material/false_center.png"><br>
+            <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
+            <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+            <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+        </div>
+
+    <!-- </center> -->
+    <div class="footer">
+        <div id="progress"></div>
+    </div>
+
+    <script>
+            const progress = document.getElementById("progress");
+            var runner = 1;
+            var status = 0;
+    
+            questions = [{
+                correct: "B"
+            }, {
+                correct: "C"
+            }, {
+                correct: ""
+            }, {
+                correct: ""
+            }, {
+                correct: ""
+            }, {
+                correct: ""
+            }, {
+                correct: ""
+            }, {
+                correct: ""
+            }
+            ];
+    
+    
+            for (let qIndex = 0; qIndex <= 7; qIndex++) {
+                progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
+                if (runner >= qIndex){
+                    document.getElementById(qIndex).style.backgroundColor = "#8bef80"
+                }
+            }
+    
+            function checkAnswer(answer) {
+                if (status == 0) {
+                    if (answer == questions[runner].correct) {
+                        answeriscorrect();
+                        status = 1;
+                    } else {
+                        answerisincorrect();
+                        status = 1;
+                    }
+                }
+            }
+    
+            function answeriscorrect() {
+                document.getElementById("true").style.display = "inline";
+                window.location.href("exercise_2.html");
+            }
+    
+            function answerisincorrect() {
+                document.getElementById("false").style.display = "inline";
+            }
+    
+            function true_false() {
+                document.getElementById("true").style.display = "none";
+                document.getElementById("false").style.display = "none";
+                status = 0;
+            }
+    
+        </script>
+</body>
+
+</html>

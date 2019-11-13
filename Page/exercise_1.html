@@ -57,38 +57,108 @@
     </nav>
     <!-- <center> -->
     <div class="middle" id="middle">
-          <div class="ex_img_box"><img src="../Material/phone.png" class="ex_img"></div>
-          <div><p style="font-size: 20px;"> 1.) ถ้าต้องการข้อความว่า "DESPACITO" ต้องกดเป็นรหัสอะไรบ้าง (เช่น I LOVE YOU คือ 444/0/555/666/888/33/0/88 เป็นต้น)</p></div>
-          <div id="choices" class="choices">
-                <div id="A" class="choice" onclick="checkAnswer('A')"><p style="color: black;font-size: 2.5vmin;">A.) 3/33/7/3/2/22/3/666/7</p></div>
-                <div id="B" class="choice" onclick="checkAnswer('B')"><p style="color: black;font-size: 2.5vmin;">B.) 3/33/7777/7/2/222/444/8/666</p></div>
-                <div id="C" class="choice" onclick="checkAnswer('C')"><p style="color: black;font-size: 2.5vmin;">C.) 3/33/55/3/3/666/8/222/666/6</p></div>
-                <div id="D" class="choice" onclick="checkAnswer('D')"><p style="color: black;font-size: 2.5vmin;">D.) 3/33/7777/7/33/777/2/3/666</p></div>
-          </div>
-         
+        <div class="ex_img_box"><img src="../Material/phone.png" class="ex_img"></div>
+        <div>
+            <p style="font-size: 20px;"> 1.) ถ้าต้องการข้อความว่า "DESPACITO" ต้องกดเป็นรหัสอะไรบ้าง (เช่น I LOVE YOU
+                คือ 444/0/555/666/888/33/0/88 เป็นต้น)</p>
+        </div>
+        <div id="choices" class="choices">
+            <div id="A" class="choice" onclick="checkAnswer('A')">
+                <p style="color: black;font-size: 2.5vmin;">A.) 3/33/7/3/2/22/3/666/7</p>
+            </div>
+            <div id="B" class="choice" onclick="checkAnswer('B')">
+                <p style="color: black;font-size: 2.5vmin;">B.) 3/33/7777/7/2/222/444/8/666</p>
+            </div>
+            <div id="C" class="choice" onclick="checkAnswer('C')">
+                <p style="color: black;font-size: 2.5vmin;">C.) 3/33/55/3/3/666/8/222/666/6</p>
+            </div>
+            <div id="D" class="choice" onclick="checkAnswer('D')">
+                <p style="color: black;font-size: 2.5vmin;">D.) 3/33/7777/7/33/777/2/3/666</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="true_false" id="true">
-            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
-            <img class="centerX" src="../Material/true_text.png"><br>
-            <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
-            <a href="exercise_2.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
-            <!-- <img class="btn_false" src="../Material/false_text.png" onclick="true_false()"> -->
-        </div>
-        <div class="true_false" id="false">
-            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
-            <img class="centerX" src="../Material/false_center.png"><br>
-            <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
-            <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
-            <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
-        </div>
+        <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+        <img class="centerX" src="../Material/true_text.png"><br>
+        <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
+        <a href="exercise_2.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
+        <!-- <img class="btn_false" src="../Material/false_text.png" onclick="true_false()"> -->
+    </div>
+    <div class="true_false" id="false">
+        <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+        <img class="centerX" src="../Material/false_center.png"><br>
+        <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
+        <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+        <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+    </div>
 
     <!-- </center> -->
     <div class="footer">
         <div id="progress"></div>
     </div>
 
-    <script src="ex_scrip.js"></script>
+    <script>
+        const progress = document.getElementById("progress");
+        var runner = 0;
+        var status = 0;
+
+        questions = [{
+            correct: "B"
+        }, {
+            correct: "C"
+        }, {
+            correct: ""
+        }, {
+            correct: ""
+        }, {
+            correct: ""
+        }, {
+            correct: ""
+        }, {
+            correct: ""
+        }, {
+            correct: ""
+        }
+        ];
+
+
+        for (let qIndex = 0; qIndex <= 7; qIndex++) {
+            progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
+            if (runner >= qIndex){
+                document.getElementById(qIndex).style.backgroundColor = "#8bef80"
+            }
+        }
+
+        function checkAnswer(answer) {
+            if (status == 0) {
+                if (answer == questions[runner].correct) {
+                    answeriscorrect();
+                    status = 1;
+                } else {
+                    answerisincorrect();
+                    status = 1;
+                }
+            }
+        }
+
+        function answeriscorrect() {
+            document.getElementById("true").style.display = "inline";
+            window.location.href("exercise_2.html");
+        }
+
+        function answerisincorrect() {
+            document.getElementById("false").style.display = "inline";
+        }
+
+        function true_false() {
+            document.getElementById("true").style.display = "none";
+            document.getElementById("false").style.display = "none";
+            status = 0;
+        }
+
+    </script>
 </body>
 
 </html>

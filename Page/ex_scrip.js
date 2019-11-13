@@ -1,12 +1,12 @@
 const progress = document.getElementById("progress");
 const panel = document.getElementById("middle");
-let runner = 0;
+var runner = 0;
 var status = 0;
 
 questions = [{
     correct: "B"
 }, {
-    correct: ""
+    correct: "C"
 }, {
     correct: ""
 }, {
@@ -42,7 +42,7 @@ function checkAnswer(answer) {
 
 function answeriscorrect() {
     document.getElementById("true").style.display = "inline";
-    runner += 1;
+    window.location.href("exercise_2.html");
 }
 
 function answerisincorrect() {
