@@ -129,13 +129,16 @@ label {
     /* padding-left: 20px; */
     margin: 6px;
 }
-/* .choice:hover {
-    border: 2px solid grey;
+
+.choiceimg {
+    margin-left: 15vmin;
+    margin-bottom: 5vmin;
+    cursor: pointer;
+}
+.choice:hover {
     font-weight: bold;
-    background: lightseagreen !important;
-    color: white !important;
     transition: 0.2s;
-} */
+}
 
 .true_false {
     border: 2px solid #417FAF;
