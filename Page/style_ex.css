@@ -89,5 +89,18 @@ label {
     margin-top: 7vmin;
     width: 80%;
     height:64%;
-    background: black;
+    /* background: black; */
+    margin-left: 10%;
+    text-align: center;
+}
+
+.ex_img{
+    /* width: 30%; */
+    height: 40%;
+}
+
+.ex_top{
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
 }
