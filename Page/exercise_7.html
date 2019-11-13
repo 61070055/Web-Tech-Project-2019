@@ -57,13 +57,14 @@
     </nav>
     <!-- <center> -->
     <div class="middle" id="middle">
-          <div class="ex_img_box"><img src="../Material/code_exercise.png" class="ex_img"></div>
-          <div><p style="font-size: 20px;"> 2.) จอร์นได้ส่งข้อความลับด้วยการเข้ารหัส แต่รหัสได้หลุดออกมา คือ <b>"QENTBAVPN"</b> ซึ่งคีย์ในการถอดรหัสดังรูป</p></div>
+          <div class="ex_img_box"><img src="../Material/table_exercise.png" class="ex_img"></div>
+          <div><p style="font-size: 20px;"> 7.) ส่วนไหนที่หายไปจากรูป</p></div>
           <div id="choices" class="choices">
-                <div id="A" class="choice" onclick="checkAnswer('A')"><p style="color: black;font-size: 2.5vmin;">A.) DANCING</p></div>
-                <div id="B" class="choice" onclick="checkAnswer('B')"><p style="color: black;font-size: 2.5vmin;">B.) DRAGOONY</p></div>
-                <div id="C" class="choice" onclick="checkAnswer('C')"><p style="color: black;font-size: 2.5vmin;">C.) DRAGONICA</p></div>
-                <div id="D" class="choice" onclick="checkAnswer('D')"><p style="color: black;font-size: 2.5vmin;">D.) DAZZLING</p></div>
+                <div id="A" class="choiceimg" onclick="checkAnswer('A')">A.) <img src="../Material/table_exercise_1.png" style="width: 13vmin;"></div>
+                <div id="B" class="choiceimg" onclick="checkAnswer('B')">B.) <img src="../Material/table_exercise_2.png" style="width: 13vmin;"></div>
+                <div id="C" class="choiceimg" onclick="checkAnswer('C')">C.) <img src="../Material/table_exercise_3.png" style="width: 13vmin;"></div>
+                <div id="D" class="choiceimg" onclick="checkAnswer('D')">D.) <img src="../Material/table_exercise_4.png" style="width: 13vmin;"></div>
+                <div id="E" class="choiceimg" onclick="checkAnswer('E')">E.) <img src="../Material/table_exercise_5.png" style="width: 13vmin;"></div>
           </div>
          
     </div>
@@ -72,7 +73,7 @@
             <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
             <img class="centerX" src="../Material/true_text.png"><br>
             <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
-            <a href="exercise_3.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
+            <a href="exercise_8.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
             <!-- <img class="btn_false" src="../Material/false_text.png" onclick="true_false()"> -->
         </div>
         <div class="true_false" id="false">
@@ -90,7 +91,7 @@
 
     <script>
             const progress = document.getElementById("progress");
-            var runner = 1;
+            var runner = 6;
             var status = 0;
     
             questions = [{
