@@ -67,6 +67,11 @@
     width: 70%;
     position: relative;
 }
+.item5 {
+    width: 85%;
+    position: relative;
+    padding: 5%;
+}
   
   .center {
       position: relative;
