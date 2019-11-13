@@ -66,7 +66,7 @@
             <img class="item1 center" src="../Material/Pattern_in_page.png">
         </div>
     </div>
-    
+
     <div class="main-container bg">
         <div class="sub-container1">
             <img class="item2 center" src="../Material/pattern_content.png">
@@ -84,96 +84,98 @@
         </div>
     </div>
     <div class="main-container">
-            <div class="sub-container2" style="padding-bottom: 0px;">
-                <img class="item4 center" src="../Material/pattern_assessment.png" style="padding-bottom: 0px;">
-                
-            </div>
-            <div class="sub-container2">
-                <p id="txt_abs" style="margin: 0;padding-left: 0px;padding-bottom: 2%;">Which one is the right one ?</p>
-            </div>
-            <div class="sub-container2" style="padding-bottom: 0px;">
-                <form style="text-align: left; margin-top: 0px;" action="javascript:void(0);" style="margin: 0;" id="abs_ans" onsubmit="checkAnswer()"
-                    method="post">
-                        <div class="sub-container1-sm" style="width: 24%;">
-                            <img class="item3 center" src="../Material/pattern_assessment_1.png">
-                            <input type="radio" class="radio_btn" name="ans" style="position: relative;"
-                                onclick="setAnswer(this.value)" value="1">
-                        </div>
-                        <div class="sub-container1-sm" style="width: 24%;">
-                            <img class="item3 center" src="../Material/pattern_assessment_2.png">
-                            <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="2">
-                        </div>
-                        <div class="sub-container1-sm" style="width: 24%;">
-                            <img class="item3 center" src="../Material/pattern_assessment_3.png">
-                            <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="3">
-                        </div>
-                        <div class="sub-container1-sm" style="width: 24%;">
-                            <img class="item3 center" src="../Material/pattern_assessment_4.png">
-                            <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="4">
-                        </div>
-                    </div>
-                    <div class="sub-container2" style="padding-top: 0px;">
-                        <input type="submit" class="result center" name="submit" value="VIEW RESULT">
-                    </div>
-                </form>
-            
+        <div class="sub-container2" style="padding-bottom: 0px;">
+            <img class="item4 center" src="../Material/pattern_assessment.png" style="padding-bottom: 0px;">
+
+        </div>
+        <div class="sub-container2">
+            <p id="txt_abs" style="margin: 0;padding-left: 0px;padding-bottom: 2%;">Which one is the right one ?</p>
+        </div>
+        <div class="sub-container2" style="padding-bottom: 0px;">
+            <form style="text-align: left; margin-top: 0px;" action="javascript:void(0);" style="margin: 0;"
+                id="abs_ans" onsubmit="checkAnswer()" method="post">
+                <div class="sub-container1-sm" style="width: 24%;">
+                    <img class="item3 center" src="../Material/pattern_assessment_1.png">
+                    <input type="radio" class="radio_btn" name="ans" style="position: relative;"
+                        onclick="setAnswer(this.value)" value="1">
+                </div>
+                <div class="sub-container1-sm" style="width: 24%;">
+                    <img class="item3 center" src="../Material/pattern_assessment_2.png">
+                    <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="2">
+                </div>
+                <div class="sub-container1-sm" style="width: 24%;">
+                    <img class="item3 center" src="../Material/pattern_assessment_3.png">
+                    <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="3">
+                </div>
+                <div class="sub-container1-sm" style="width: 24%;">
+                    <img class="item3 center" src="../Material/pattern_assessment_4.png">
+                    <input type="radio" class="radio_btn" name="ans" onclick="setAnswer(this.value)" value="4">
+                </div>
+        </div>
+        <div class="sub-container2" style="padding-top: 0px;">
+            <input type="submit" class="result center" name="submit" value="VIEW RESULT">
+        </div>
+        </form>
+
     </div>
     <div class="main-container bg">
-            <div class="sub-container1">
-                <div class="sub-container2">
-                    <img class="item3 centerX" src="../Material/exercise.png" style="left: 70%;"></div>
-                <div class="sub-container2">
-                    <a href="../Quizs_Games/quizs.html"><button class="b1" style="left: 70%;">EXERCISE</button></a>
-                </div>
-            </div>
-            <div class="sub-container1">
-                <div class="sub-container2">
-                    <img class="item3 centerX" src="../Material/Quiz.png" style="left: 30%;"></div>
-                <div class="sub-container2">
-                    <a href="../Quizs/quizs.html"><button class="b1" style="left: 30%;">QUIZ NOW</button></a>
-                </div>
+        <div class="sub-container1">
+            <div class="sub-container2">
+                <img class="item3 centerX" src="../Material/exercise.png" style="left: 70%;"></div>
+            <div class="sub-container2">
+                <a href="../Quizs_Games/quizs.html"><button class="b1" style="left: 70%;">EXERCISE</button></a>
             </div>
         </div>
+        <div class="sub-container1">
+            <div class="sub-container2">
+                <a href="../Quizs/quizs.html"><img class="item3 centerX" src="../Material/Quiz.png"
+                        style="left: 30%;"></a>
+            </div>
+            <div class="sub-container2">
+                <a href="../Quizs/quizs.html"><button class="b1" style="left: 30%;">QUIZ NOW</button></a>
+            </div>
+        </div>
+    </div>
     <div class="d4">
-            <div class="true_false" id="true">
-                    <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
-                    <img class="centerX" src="../Material/true_text.png"><br>
-                    <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
-                    <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
-                    <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
-                </div>
-                <div class="true_false" id="false">
-                        <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
-                        <img class="centerX" src="../Material/false_center.png"><br>
-                        <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
-                        <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
-                        <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
-                    </div>
+        <div class="true_false" id="true">
+            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+            <img class="centerX" src="../Material/true_text.png"><br>
+            <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
+            <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+            <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+        </div>
+        <div class="true_false" id="false">
+            <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+            <img class="centerX" src="../Material/false_center.png"><br>
+            <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
+            <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+            <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+        </div>
     </div>
     <script>
-            let ans = "";
-    
-            function setAnswer(answer) {
-                ans = answer;
+        let ans = "";
+
+        function setAnswer(answer) {
+            ans = answer;
+        }
+
+        function checkAnswer() {
+            if (ans == "1") {
+                document.getElementById("true").style.display = "inline";
+                return false;
+            } else if (ans == "") {
+                return false;
+            } else {
+                document.getElementById("false").style.display = "inline";
+                return false;
             }
-    
-            function checkAnswer() {
-                if (ans == "1") {
-                    document.getElementById("true").style.display = "inline";
-                    return false;
-                } else if (ans == "") {
-                    return false;
-                } else {
-                    document.getElementById("false").style.display = "inline";
-                    return false;
-                }
-            }
-    
-            function true_false() {
-                document.getElementById("true").style.display = "none";
-                document.getElementById("false").style.display = "none";
-            }
-        </script>
+        }
+
+        function true_false() {
+            document.getElementById("true").style.display = "none";
+            document.getElementById("false").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
