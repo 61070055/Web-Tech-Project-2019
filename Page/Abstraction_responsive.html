@@ -141,8 +141,20 @@
         </div>
     </div>
     <div class="d4">
-        <img class="true_false" id="true" src="../Material/true.png" onclick="true_false()">
-        <img class="true_false" id="false" src="../Material/false.png" onclick="true_false()">
+            <div class="true_false" id="true">
+                    <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+                    <img class="centerX" src="../Material/true_text.png"><br>
+                    <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
+                    <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+                    <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+                </div>
+                <div class="true_false" id="false">
+                        <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
+                        <img class="centerX" src="../Material/false_center.png"><br>
+                        <p style="text-align: center; color: #D75A4A; padding-top: 5%;">INCORRECT !</p>
+                        <button class="btn_in_let centerX" onclick="true_false()">LET US EXPLAIN</button>
+                        <img class="btn_false" src="../Material/false_text.png" onclick="true_false()">
+                    </div>
     </div>
     <script>
         let ans = "";
