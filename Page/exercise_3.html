@@ -57,13 +57,13 @@
     </nav>
     <!-- <center> -->
     <div class="middle" id="middle">
-          <div class="ex_img_box"><img src="../Material/phone.png" class="ex_img"></div>
-          <div><p style="font-size: 20px;"> 2.) จอร์นได้ส่งข้อความลับด้วยการเข้ารหัส แต่รหัสได้หลุดออกมา คือ <b>"QENTBAVPN"</b> ซึ่งคีย์ในการถอดรหัสดังรูป</p></div>
+          <!-- <div class="ex_img_box"><img src="../Material/phone.png" class="ex_img"></div> -->
+          <div><p style="font-size: 20px;"> 3.) ครึ่งชีวิต(Half-Life) คือ จำนวนเวลาที่ทำให้ปริมาณสารลดลงเหลือครึ่งหนึ่งของปริมาณของสารเอง เช่น C-14 มีครึ่งชีวิตคือ 5,730 ปี หมายความว่า ทุกๆ 5,730 ปี C-14 จะมีปริมาณลดลงเหลือครึ่งหนึ่งของปริมาณทั้งหมดในช่วงเวลานั้น มีนักเคมี ได้ค้นพบสารใหม่ 2 สาร คือสาร A และสาร B โดยที่สาร A มีครึ่งชีวิตเท่ากับ 30 นาที และสาร B มีครึ่งชีวิตเท่ากับ 1 ชั่วโมง นักเคมีคนนี้สงสัยว่าถ้าเขาเตรียมสาร A ไว้ 800g แล้วตั้งทิ้งไว้ 1 ชั่วโมง แล้วหลังจากนั้น ก็นำสาร B จำนวนหนึ่ง แล้วปล่อยไว้เป็นเวลา 2 ชั่วโมง ปรากฏว่าปริมาณของสาร A และ B เท่ากัน จงหาว่านักเคมีคนนี้นำสาร B มากี่กิโลกรัม</p></div>
           <div id="choices" class="choices">
-                <div id="A" class="choice" onclick="checkAnswer('A')"><p style="color: black;font-size: 2.5vmin;">A.) DANCING</p></div>
-                <div id="B" class="choice" onclick="checkAnswer('B')"><p style="color: black;font-size: 2.5vmin;">B.) DRAGOONY</p></div>
-                <div id="C" class="choice" onclick="checkAnswer('C')"><p style="color: black;font-size: 2.5vmin;">C.) DRAGONICA</p></div>
-                <div id="D" class="choice" onclick="checkAnswer('D')"><p style="color: black;font-size: 2.5vmin;">D.) DAZZLING</p></div>
+                <div id="A" class="choice" onclick="checkAnswer('A')"><p style="color: black;font-size: 2.5vmin;">A.) 5 kg</p></div>
+                <div id="B" class="choice" onclick="checkAnswer('B')"><p style="color: black;font-size: 2.5vmin;">B.) 0.5 kg</p></div>
+                <div id="C" class="choice" onclick="checkAnswer('C')"><p style="color: black;font-size: 2.5vmin;">C.) 0.05 kg</p></div>
+                <div id="D" class="choice" onclick="checkAnswer('D')"><p style="color: black;font-size: 2.5vmin;">D.) 0.005 kg</p></div>
           </div>
          
     </div>
@@ -72,7 +72,7 @@
             <p style="margin-top: 0px; font-size:20px; text-align: center;">Your answer is..... </p>
             <img class="centerX" src="../Material/true_text.png"><br>
             <p style="text-align: center; color: #65C53E; padding-top: 5%;">CORRECT !</p>
-            <a href="exercise_3.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
+            <a href="exercise_4.html"><button class="btn_in_let centerX" onclick="true_false()">NEXT!</button></a>
             <!-- <img class="btn_false" src="../Material/false_text.png" onclick="true_false()"> -->
         </div>
         <div class="true_false" id="false">
@@ -90,7 +90,7 @@
 
     <script>
             const progress = document.getElementById("progress");
-            var runner = 1;
+            var runner = 2;
             var status = 0;
     
             questions = [{
