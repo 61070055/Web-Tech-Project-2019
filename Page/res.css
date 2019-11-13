@@ -331,15 +331,7 @@
       text-align: center;
       margin-top: 10%;
   }
-  
   .true_false {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-  }
-  .true_text {
     border: 2px solid #417FAF;
     position: fixed;
     top: 50%;
@@ -347,8 +339,10 @@
     transform: translate(-50%, -50%);
     padding: 3%;
     border-radius: 50px;
+    z-index: 9999;
+    background: #fff;
+    display: none;
 }
-
 .btn_in_let {
     border-radius: 25px;
     border: 2px solid #417FAF;
