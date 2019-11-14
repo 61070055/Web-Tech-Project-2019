@@ -140,7 +140,7 @@ var correct_choice = questions[runningQuestion].correct
 // render a question
 function renderQuestion() {
     let q = questions[runningQuestion];
-        question.innerHTML = "<p>" + q.question + "</p>";
+        question.innerHTML = "<div class='qdiv'><p>" + q.question + "</p></div>";
         // qImg.innerHTML = "<img src=" + q.imgSrc + ">";
         if (questions[runningQuestion].checkImg == "0"){
             choiceA.innerHTML = q.choiceA;

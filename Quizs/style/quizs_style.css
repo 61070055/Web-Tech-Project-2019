@@ -97,13 +97,17 @@ body {
     height: 299px;
     border-top-left-radius: 5px;
 }
+.qdiv{
+    background-color: #417FAF;
+    width: 100%;
 
+}
 #question {
     
     width: 90vmin;
     height: 35vmin;
     position: absolute;
-    left: 30%;
+    /* left: 30%; */
     top: 10%;
 }
 
