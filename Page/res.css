@@ -276,9 +276,11 @@
   }
   
   .in_bar {
-      height: 5vh;
-  }
-  
+    height: 6vh;
+}
+li.nav-item{
+  margin: 5px;
+}
   .nav-item:hover {
       background: #DBAC50;
   }
