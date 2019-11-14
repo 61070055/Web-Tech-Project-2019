@@ -114,7 +114,7 @@ label {
     display: flex;
     /* height: 150px; */
     flex-wrap: wrap;
-    text-align: left;
+    text-align: center;
 }
 
 .choice {
@@ -125,9 +125,10 @@ label {
     /* border: 1px solid black;
     border-radius: 5px; */
     cursor: pointer;
-    padding: 5px;
+    /* padding: 5px; */
     /* padding-left: 20px; */
-    margin: 6px;
+    margin-left: 15vmin;
+    /* margin-right: 0vmin; */
 }
 
 .choiceimg {
