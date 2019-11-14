@@ -33,7 +33,18 @@
         }
     </style>
     <script>
-        
+        function btn1() {
+            document.getElementById("ans1").style.display = "inline-block";
+            document.getElementById("img_left1_1").style.left = "25%";
+            document.getElementById("img_left1_2").style.left = "10%";
+            document.getElementById("img_left1_2").style.width = "40%";
+            document.getElementById("img_left1_3").style.left = "10%";
+            document.getElementById("img_left1_3").style.width = "40%";
+            document.getElementById("img_left1_4").style.left = "10%";
+            document.getElementById("img_left1_4").style.width = "40%";
+            document.getElementById("img_left1_5").style.left = "10%";
+            document.getElementById("img_left1_5").style.width = "40%";
+        }
         function btn2() {
             document.getElementById("ans2").style.display = "inline-block";
             document.getElementById("img_left2_1").style.left = "25%";
@@ -45,6 +56,17 @@
             document.getElementById("img_left2_4").style.width = "40%";
             document.getElementById("img_left2_5").style.left = "10%";
             document.getElementById("img_left2_5").style.width = "40%";
+        }
+        function btn3() {
+            document.getElementById("ans3").style.display = "inline-block";
+            document.getElementById("img_left3_2").style.left = "10%";
+            document.getElementById("img_left3_2").style.width = "40%";
+            document.getElementById("img_left3_3").style.left = "10%";
+            document.getElementById("img_left3_3").style.width = "40%";
+            document.getElementById("img_left3_4").style.left = "10%";
+            document.getElementById("img_left3_4").style.width = "40%";
+            document.getElementById("img_left3_5").style.left = "10%";
+            document.getElementById("img_left3_5").style.width = "40%";
         }
         function btn4() {
             document.getElementById("ans4").style.display = "inline-block";
@@ -186,7 +208,7 @@
     </div>
     <!-- Number 1 -->
     <div class="main-container centerX div_in_answer" id="ans1">
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left1_1">
             <img src="../Material/phone.png" class="item3 centerX">
         </div>
         <div class="sub-container2">
@@ -194,22 +216,22 @@
                 ต้องกดเป็นรหัสอะไรบ้าง (เช่น I LOVE YOU
                 คือ 444/0/555/666/888/33/0/88 เป็นต้น)</p>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left1_2">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">A.) 3/33/7/3/2/22/3/666/7</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left1_3">
             <div class="centerX">
                 <p style="color: #65C53E;font-size: 3vmin; text-align: center;">B.) 3/33/7777/7/2/222/444/8/666</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left1_4">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">C.) 3/33/55/3/3/666/8/222/666/6</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left1_5">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin;text-align: center;">D.) 3/33/7777/7/33/777/2/3/666</p>
             </div>
@@ -217,6 +239,7 @@
     </div>
     </div>
     </div>
+    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn1()">ANS1</button>
     <!-- Number 2 -->
     <div class="main-container centerX div_in_answer" id="ans2">
         <div class="sub-container1" id="img_left2_1">
@@ -261,22 +284,22 @@
                 แล้วหลังจากนั้น ก็นำสาร B จำนวนหนึ่ง แล้วปล่อยไว้เป็นเวลา 2 ชั่วโมง ปรากฏว่าปริมาณของสาร A และ B เท่ากัน
                 จงหาว่านักเคมีคนนี้นำสาร B มากี่กิโลกรัม</p>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left3_2">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">A.) 5 kg</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left3_3">
             <div class="centerX">
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">A.) 5 kg</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left3_4">
             <div>
                 <p style="color: #65C53E;font-size: 3vmin; text-align: center;">C.) 0.05 kg</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left3_5">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin;text-align: center;">D.) 0.005 kg</p>
             </div>
@@ -284,6 +307,7 @@
     </div>
     </div>
     </div>
+    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn3()">ANS3</button>
     <!-- Number 4 -->
     <div class="main-container centerX div_in_answer" id="ans4">
         <div class="sub-container1" id="img_left4">
