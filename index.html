@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title></title>
 </head>
 
@@ -14,7 +15,7 @@
     <div id="main" class="center container">
         <div class="sub-container circle" circle="1">
             <svg width="100%" height="100%" viewBox="0 0 540 540">
-                <image x="60" y="60" xlink:href="./Material/img_decomposition.png" height="370" width="370" />
+                <image x="60" y="60" xlink:href="./Material/img_decomposition.png" height="370" width="370" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500"/>
                 <a href="Page/Decomposition_responsive.html">
                     <path onmouseover="hover(0)" onmouseout="unhover()" class="hover" state="true" d="M 20,520
                      a 500,500 0 0,1 500,-500
@@ -31,7 +32,7 @@
 
         <div class="sub-container circle" circle="2">
             <svg width="100%" height="100%" viewBox="0 0 540 540">
-                <image x="30" y="70" xlink:href="./Material/Pattern_menu.png" height="430" width="430" />
+                <image x="30" y="70" xlink:href="./Material/Pattern_menu.png" height="430" width="430" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="550" />
                 <a href="Page/Pattern_responsive.html">
                     <path onmouseover="hover(1)" onmouseout="unhover()" class="hover" state="true" d="M 520,520
                     a 500,500 0 0,0 -500,-500
@@ -48,7 +49,7 @@
 
         <div class="sub-container circle" circle="3">
             <svg width="100%" height="100%" viewBox="0 0 540 540">
-                <image x="-130" y="-170" xlink:href="./Material/temp.png" height="840" width="840" />
+                <image x="-130" y="-170" xlink:href="./Material/temp.png" height="840" width="840" data-aos="fade-right"data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="600"/>
                 <a href="Page/Abstraction_responsive.html">
                     <path onmouseover="hover(2)" onmouseout="unhover()" class="hover" state="true" d="M 20,20
                         a 500,500 0 0,0 500,500
@@ -66,7 +67,7 @@
 
         <div class="sub-container circle" circle="4">
             <svg width="100%" height="100%" viewBox="0 0 540 540">
-                <image x="40" y="41" xlink:href="./Material/algorithm.png" height="470" width="470" />
+                <image x="40" y="41" xlink:href="./Material/algorithm.png" height="470" width="470" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700"/>
                 <a href="Page/Algorithm_responsive.html">
                     <path onmouseover="hover(3)" onmouseout="unhover()" class="hover" state="true" d="M 520,20
                         a 500,500 0 0,1 -500,500
@@ -90,7 +91,7 @@
                         a 520,520 0 0,0 0,1040
                         v -300
                         a 221,221 0 0,1 0,-440
-                        v-300" stroke="white" fill="417FAF"/>
+                        v-300" stroke="white" fill="417FAF" />
                 </a>
                 <path class="border2" d="M 525,20
                     a 520,520 0 0,0 0,1040
@@ -102,13 +103,13 @@
 
         <div class="sub-container2 half-circle" half="2">
             <svg width="100%" height="100%" viewBox="0 0 540 1080">
-                    <image x="-100" y="145" xlink:href="./Material/base_num_index.png" height="800" width="800" />
+                <image x="-100" y="145" xlink:href="./Material/base_num_index.png" height="800" width="800" />
                 <a href="Page/base_num_1.html">
-                        <path onmouseover="hover2(1)" onmouseout="unhover2()" class="hover2" state="true" d="M 15,20
+                    <path onmouseover="hover2(1)" onmouseout="unhover2()" class="hover2" state="true" d="M 15,20
                         a 520,520 0 0,1 0,1040
                         v -300
                         a 221,221 0 0,0 0,-440
-                        v-300" stroke="white"fill="#417FAF" />
+                        v-300" stroke="white" fill="#417FAF" />
                 </a>
                 <path class="border2" d="M 15,20
                         a 520,520 0 0,1 0,1040
@@ -149,7 +150,7 @@
 
         <div class="mini-container circle" circle="3">
             <svg width="100%" height="100%" viewBox="0 0 540 540">
-                    <path class="border" d="M 20,20
+                <path class="border" d="M 20,20
                         a 500,500 0 0,0 500,500
                         v -300
                         a 220,220 0 0,1 -200,-200
@@ -319,11 +320,15 @@
             let mouseX = e.clientX;
             let mouseY = e.clientY;
             setTimeout(() => {
-                mouseElement.style.top = `${mouseY+10}px`
-                mouseElement.style.left = `${mouseX+10}px`
+                mouseElement.style.top = `${mouseY + 10}px`
+                mouseElement.style.left = `${mouseX + 10}px`
             }, 1)
 
         }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
