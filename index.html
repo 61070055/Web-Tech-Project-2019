@@ -213,9 +213,7 @@
                         case 3:
                             circle.innerHTML = "Algorithm"
                     }
-                    circle.style.fontSize = "1.8vmax"
-                    circle.style.top = "40%"
-
+                    circle.setAttribute("state", "1")
                     continue
                 }
                 arcs[i].setAttribute("state", "false")
@@ -228,9 +226,8 @@
                 borders[i].style.opacity = 1;
                 arcs[i].setAttribute("state", "true")
             }
-            circle.innerHTML = "CTS"
-            circle.style.fontSize = "4vmax"
-            circle.style.top = "30%"
+            changeText("CTS")
+            circle.setAttribute("state", "0")
         }
 
         function hover2(item) {
@@ -242,7 +239,7 @@
                             break
                         case 1:
                             changeText("Number Base")
-                            circle.style.fontSize = "3vmax"
+                            circle.setAttribute("state", "2")
                     }
                     continue
                 }
@@ -256,7 +253,7 @@
                 halfBorders[i].style.opacity = 1;
                 halfs[i].setAttribute("state", "true")
             }
-            circle.style.fontSize = "4vmax"
+            circle.setAttribute("state", "0")
             changeText("Logic")
         }
 
