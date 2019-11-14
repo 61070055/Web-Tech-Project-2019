@@ -135,7 +135,7 @@
                      a 500,500 0 0,1 500,-500
                      v 300
                      a 220,220 0 0,0 -200,200
-                     z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                     z" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
         <div class="mini-container circle" circle="2">
@@ -144,7 +144,7 @@
                     a 500,500 0 0,0 -500,-500
                     v 300
                     a 220,220 0 0,1 200,200
-                    z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                    z" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
 
@@ -154,7 +154,7 @@
                         a 500,500 0 0,0 500,500
                         v -300
                         a 220,220 0 0,1 -200,-200
-                        z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                        z" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
 
@@ -164,7 +164,7 @@
                         a 500,500 0 0,1 -500,500
                         v -300
                         a 220,220 0 0,0 200,-200
-                        z" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                        z" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
         <div class="mini-container2 half-circle" half="1">
@@ -173,7 +173,7 @@
                     a 520,520 0 0,0 0,1040
                     v -300
                     a 221,221 0 0,1 0,-440
-                    v-300" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                    v-300" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
 
@@ -183,7 +183,7 @@
                         a 520,520 0 0,1 0,1040
                         v -300
                         a 221,221 0 0,0 0,-440
-                        v-300" stroke="white" stroke-width="15" stroke-linecap="round" fill="none" />
+                        v-300" stroke="white" stroke-width="20" stroke-linecap="round" fill="none" />
             </svg>
         </div>
     </div>
@@ -236,6 +236,14 @@
         function hover2(item) {
             for (let i = 0; i < halfs.length; i++) {
                 if (i == item) {
+                    switch (i) {
+                        case 0:
+                            changeText("Logic")
+                            break
+                        case 1:
+                            changeText("Number Base")
+                            circle.style.fontSize = "3vmax"
+                    }
                     continue
                 }
                 halfs[i].setAttribute("state", "false")
@@ -248,6 +256,8 @@
                 halfBorders[i].style.opacity = 1;
                 halfs[i].setAttribute("state", "true")
             }
+            circle.style.fontSize = "4vmax"
+            changeText("Logic")
         }
 
         function changeText(text) {
