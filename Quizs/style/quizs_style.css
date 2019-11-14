@@ -19,9 +19,10 @@ body {
     font-size: 5vmin;
     font-weight: bolder;
     word-break: break-all;
-    width: 15vmin;
-    height: 20vmin;
+    width: 30vmin;
+    height: 22vmin;
     border: 2px solid #417FAF;
+    border-radius: 10%;
     text-align: center;
     cursor: pointer;
     position: absolute;
@@ -49,10 +50,11 @@ body {
 }
 
 #help {
-    font-size: 3vmin;
+    width: 90vmin;
+    font-size: 2.5vmin;
     position: absolute;
-    left: 50%;
-    top: 80%;
+    left: 55%;
+    top: 75%;
     transform: translate(-50%, -50%);
     color: red;
 }
@@ -97,10 +99,11 @@ body {
 }
 
 #question {
+    
     width: 90vmin;
     height: 35vmin;
     position: absolute;
-    left: 30.5%;
+    left: 30%;
     top: 10%;
 }
 
@@ -108,6 +111,7 @@ body {
     margin: 0;
     padding: 15px;
     font-size: 3vmin;
+    
 }
 
 #choices {
@@ -237,6 +241,9 @@ body {
  
  /* ipad pro */
 @media only screen and (max-width: 1050px) {
+    #help {
+        width: 80vmin;
+    }
     #question {
         width: 70vmin;
         height: 50vmin;
@@ -438,6 +445,9 @@ body {
 }
  /* Iphone 6/7/8 plus default phone */
 @media only screen and (max-width: 600px) {
+    #help {
+        width: 70vmin;
+    }
     #question {
         width: 78vmin;
         height: 50vmin;
