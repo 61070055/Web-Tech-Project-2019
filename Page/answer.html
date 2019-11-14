@@ -20,7 +20,38 @@
             width: 90%;
             margin-top: 5%;
         }
+
+        #ans1,
+        #ans2,
+        #ans3,
+        #ans4,
+        #ans5,
+        #ans6,
+        #ans7,
+        #ans8 {
+            display: none;
+        }
     </style>
+    <script>
+        
+        function btn2() {
+            document.getElementById("ans2").style.display = "inline-block";
+            document.getElementById("img_left2_1").style.left = "25%";
+            document.getElementById("img_left2_2").style.left = "10%";
+            document.getElementById("img_left2_2").style.width = "40%";
+            document.getElementById("img_left2_3").style.left = "10%";
+            document.getElementById("img_left2_3").style.width = "40%";
+            document.getElementById("img_left2_4").style.left = "10%";
+            document.getElementById("img_left2_4").style.width = "40%";
+            document.getElementById("img_left2_5").style.left = "10%";
+            document.getElementById("img_left2_5").style.width = "40%";
+        }
+        function btn4() {
+            document.getElementById("ans4").style.display = "inline-block";
+            document.getElementById("img_left4").style.left = "25%";
+            document.getElementById("magin_left4").style.marginLeft = "25%";
+        }
+    </script>
 </head>
 
 <body>
@@ -156,7 +187,7 @@
     <!-- Number 1 -->
     <div class="main-container centerX div_in_answer" id="ans1">
         <div class="sub-container1">
-            <img src="../Material/phone.png" class="item3 centerX" >
+            <img src="../Material/phone.png" class="item3 centerX">
         </div>
         <div class="sub-container2">
             <p style="font-size: 3vmin; text-align: center;"> ถ้าต้องการข้อความว่า "DESPACITO"
@@ -188,29 +219,29 @@
     </div>
     <!-- Number 2 -->
     <div class="main-container centerX div_in_answer" id="ans2">
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left2_1">
             <img src="../Material/code_exercise.png" class="item3 centerX">
         </div>
         <div class="sub-container2">
             <p style="font-size: 3vmin; text-align: center;"> จอร์นได้ส่งข้อความลับด้วยการเข้ารหัส
                 แต่รหัสได้หลุดออกมา คือ <b>"QENTBAVPN"</b> ซึ่งคีย์ในการถอดรหัสดังรูป</p>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left2_2">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">A.) DANCING</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left2_3">
             <div class="centerX">
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">B.) DRAGOONY</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left2_4">
             <div>
                 <p style="color: #65C53E;font-size: 3vmin; text-align: center;">C.) DRAGONICA</p>
             </div>
         </div>
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left2_5">
             <div>
                 <p style="color: #D75A4A;font-size: 3vmin;text-align: center;">D.) DAZZLING</p>
             </div>
@@ -218,6 +249,7 @@
     </div>
     </div>
     </div>
+    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn2()">ANS2</button>
     <!-- Number 3 -->
     <div class="main-container centerX div_in_answer" id="ans3">
         <div class="sub-container2">
@@ -254,13 +286,13 @@
     </div>
     <!-- Number 4 -->
     <div class="main-container centerX div_in_answer" id="ans4">
-        <div class="sub-container1">
+        <div class="sub-container1" id="img_left4">
             <img src="../Material/pattern_exercise.png" class="item1 centerX">
         </div>
         <div class="sub-container2">
             <p style="font-size: 3vmin; text-align: center;">จงหารูปสี่เหลี่ยมที่หายไป</p>
         </div>
-        <div class="row">
+        <div class="row" id="magin_left4">
             <div class="col-2.4">
                 <p style="color: #D75A4A;font-size: 3vmin; text-align: center;">A.) <img
                         src="../Material/pattern_exercise_1.png" style="width: 12vmin;"></p>
@@ -293,6 +325,7 @@
         </div>
     </div>
     </div>
+    <button class="b2 centerX" style="margin-top: 3%;margin-bottom: 3%;" onclick="btn4()">ANS4</button>
     <!-- Number 5 -->
     <div class="main-container centerX div_in_answer" id="ans5">
         <div class="sub-container1">
@@ -429,7 +462,6 @@
     </div>
     </div>
     </div>
-    <a href=""><button class="b2 centerX" style="margin-top: 3%;margin-bottom: 3%;">BACK</button></a>
 </body>
 
 </html>
