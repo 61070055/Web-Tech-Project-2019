@@ -531,7 +531,7 @@
   
   .tooltip {
       position: relative;
-      display: inline-block;
+      display: block;
       opacity: 1;
   }
   
@@ -558,6 +558,8 @@
   @media (max-width: 767px) {
       .nav-res {
           display: inline-block;
+          font-family: 'Kanit', sans-serif;
+          font-size: 25px;
       }
       nav {
           width: 100%;
@@ -586,6 +588,9 @@
           width: 85%;
           position: relative;
           padding: 5%
+      }
+      .tooltiptext {
+          display: none;
       }
   }
   
