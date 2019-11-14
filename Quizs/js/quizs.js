@@ -141,7 +141,7 @@ var correct_choice = questions[runningQuestion].correct
 function renderQuestion() {
     let q = questions[runningQuestion];
         question.innerHTML = "<p>" + q.question + "</p>";
-        qImg.innerHTML = "<img src=" + q.imgSrc + ">";
+        // qImg.innerHTML = "<img src=" + q.imgSrc + ">";
         if (questions[runningQuestion].checkImg == "0"){
             choiceA.innerHTML = q.choiceA;
             choiceB.innerHTML = q.choiceB;
