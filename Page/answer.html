@@ -35,6 +35,7 @@
     <script>
         function btn1() {
             document.getElementById("ans1").style.display = "inline-block";
+            document.getElementById("btn1").style.display = "none";
             document.getElementById("img_left1_1").style.left = "25%";
             document.getElementById("img_left1_2").style.left = "10%";
             document.getElementById("img_left1_2").style.width = "40%";
@@ -47,6 +48,7 @@
         }
         function btn2() {
             document.getElementById("ans2").style.display = "inline-block";
+            document.getElementById("btn2").style.display = "none";
             document.getElementById("img_left2_1").style.left = "25%";
             document.getElementById("img_left2_2").style.left = "10%";
             document.getElementById("img_left2_2").style.width = "40%";
@@ -59,6 +61,7 @@
         }
         function btn3() {
             document.getElementById("ans3").style.display = "inline-block";
+            document.getElementById("btn3").style.display = "none";
             document.getElementById("img_left3_2").style.left = "10%";
             document.getElementById("img_left3_2").style.width = "40%";
             document.getElementById("img_left3_3").style.left = "10%";
@@ -70,11 +73,13 @@
         }
         function btn4() {
             document.getElementById("ans4").style.display = "inline-block";
+            document.getElementById("btn4").style.display = "none";
             document.getElementById("img_left4").style.left = "25%";
             document.getElementById("magin_left4").style.marginLeft = "25%";
         }
         function btn5() {
             document.getElementById("ans5").style.display = "inline-block";
+            document.getElementById("btn5").style.display = "none";
             document.getElementById("img_left5_1").style.left = "25%";
             document.getElementById("img_left5_2").style.left = "10%";
             document.getElementById("img_left5_2").style.width = "40%";
@@ -87,6 +92,7 @@
         }
         function btn6() {
             document.getElementById("ans6").style.display = "inline-block";
+            document.getElementById("btn6").style.display = "none";
             document.getElementById("img_left6_1").style.left = "25%";
             document.getElementById("img_left6_2").style.left = "10%";
             document.getElementById("img_left6_2").style.width = "40%";
@@ -99,11 +105,13 @@
         }
         function btn7() {
             document.getElementById("ans7").style.display = "inline-block";
+            document.getElementById("btn7").style.display = "none";
             document.getElementById("img_left7_1").style.left = "25%";
             document.getElementById("magin_left7").style.marginLeft = "25%";
         }
         function btn8() {
             document.getElementById("ans8").style.display = "inline-block";
+            document.getElementById("btn8").style.display = "none";
             document.getElementById("img_left8_1").style.left = "25%";
             document.getElementById("img_left8_2").style.left = "10%";
             document.getElementById("img_left8_2").style.width = "40%";
@@ -129,7 +137,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="base_num_1.html"><img class="in_bar"
+                    <a class="nav-link" href="base_num_1.html"><img class="in_bar"
                             src="../Material/base_num_menu.png"><span class="nav-res white">Base num</span></a>
                 </li>
                 <li class="nav-item">
@@ -280,7 +288,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn1()">ANS1</button>
+    <div style="width: 100%;">
+        <button id="btn1" class="b2 centerX" style="margin-top: 3%;" onclick="btn1()">เฉลยข้อ 1</button>
+    </div>
     <!-- Number 2 -->
     <div class="main-container centerX div_in_answer" id="ans2">
         <div class="sub-container1" id="img_left2_1">
@@ -313,7 +323,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn2()">ANS2</button>
+    <div style="width: 100%;">
+        <button id="btn2" class="b2 centerX" style="margin-top: 3%;" onclick="btn2()">เฉลยข้อ 2</button>
+    </div>
     <!-- Number 3 -->
     <div class="main-container centerX div_in_answer" id="ans3">
         <div class="sub-container2">
@@ -348,7 +360,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn3()">ANS3</button>
+    <div style="width: 100%;">
+        <button id="btn3" class="b2 centerX" style="margin-top: 3%;" onclick="btn3()">เฉลยข้อ 3</button>
+    </div>
     <!-- Number 4 -->
     <div class="main-container centerX div_in_answer" id="ans4">
         <div class="sub-container1" id="img_left4">
@@ -390,7 +404,9 @@
         </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn4()">ANS4</button>
+    <div style="width: 100%;">
+        <button id="btn4" class="b2 centerX" style="margin-top: 3%;" onclick="btn4()">เฉลยข้อ 4</button>
+    </div>
     <!-- Number 5 -->
     <div class="main-container centerX div_in_answer" id="ans5">
         <div class="sub-container1" id="img_left5_1">
@@ -422,7 +438,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn5()">ANS5</button>
+    <div style="width: 100%;">
+        <button id="btn5" class="b2 centerX" style="margin-top: 3%;" onclick="btn5()">เฉลยข้อ 5</button>
+    </div>
     <!-- Number 6 -->
     <div class="main-container centerX div_in_answer" id="ans6">
         <div class="sub-container1" id="img_left6_1">
@@ -454,7 +472,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn6()">ANS6</button>
+    <div style="width: 100%;">
+        <button id="btn6" class="b2 centerX" style="margin-top: 3%;" onclick="btn6()">เฉลยข้อ 6</button>
+    </div>
     <!-- Number 7 -->
     <div class="main-container centerX div_in_answer" id="ans7">
         <div class="sub-container1" id="img_left7_1">
@@ -497,7 +517,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;" onclick="btn7()">ANS7</button>
+    <div style="width: 100%;">
+        <button id="btn7" class="b2 centerX" style="margin-top: 3%;" onclick="btn7()">เฉลยข้อ 7</button>
+    </div>
     <!-- Number 8 -->
     <div class="main-container centerX div_in_answer" id="ans8">
         <div class="sub-container1" id="img_left8_1">
@@ -530,7 +552,9 @@
     </div>
     </div>
     </div>
-    <button class="b2 centerX" style="margin-top: 3%;margin-bottom: 3%;" onclick="btn8()">ANS8</button>
+    <div style="width: 100%;">
+        <button id="btn8" class="b2 centerX" style="margin-top: 3%;margin-bottom: 3%;" onclick="btn8()">เฉลยข้อ 8</button>
+    </div>
 </body>
 
 </html>
