@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Decomposition</title>
 </head>
@@ -59,16 +60,16 @@
 
     <div class="main-container">
         <div class="sub-container1">
-            <h1 class="text">การแยกส่วนปัญหา (Decomposition)</h1><br>
+            <h1 class="text" >การแยกส่วนปัญหา (Decomposition)</h1><br>
             <p class="text">เป็นการแยกปัญหาหลัก ออกมาเป็นส่วนย่อยๆ<br>เพื่อทำให้ง่ายต่อการแก้ไขปัญหา</p>
         </div>
-        <div class="sub-container1">
-            <img class="item1 center" src="../Material/decomposition_head.png">
+        <div class="sub-container1" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
+            <img class="item1 center" src="../Material/decomposition_head.png" >
         </div>
     </div>
 
     <div class="main-container bg">
-        <div class="sub-container1">
+        <div class="sub-container1" data-aos="zoom-in" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800">
             <img class="item1 center" src="../Material/car.png">
         </div>
         <div class="sub-container1">
@@ -164,6 +165,10 @@
         }
 
     </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          AOS.init();
+      </script>
 </body>
 
 </html>
