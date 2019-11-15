@@ -16,26 +16,27 @@ body {
 }
 
 #start {
-    font-size: 5vmin;
+    font-size: 5.5vmin;
     font-weight: bolder;
     word-break: break-all;
     width: 30vmin;
-    height: 22vmin;
+    height: 30vmin;
     border: 2px solid #417FAF;
-    border-radius: 10%;
+    background: #417FAF;
+    border-radius: 50%;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    transform: translate(-50%, -50%);
     left: 50%;
     top: 40%;
-    color: #417FAF;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 #start:hover {
-    border: 3px solid lightseagreen;
-    color: lightseagreen;
-    background: rgb(234, 243, 103);
+    border: 3px solid #004d65;
+    color: #fff;
+    background: #004d65;
     transition: 0.1s;
 }
 
