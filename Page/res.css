@@ -159,11 +159,12 @@
       width: 25.5vmin;
       height: 6vmin;
       font-size: 3vmin;
+      margin-bottom: 3%;
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-bottom: 3%;
+      
   }
   
   .b2 {
